@@ -1,0 +1,28 @@
+# brace style
+--style=google
+
+# indentation
+--indent=tab
+--indent-modifiers
+
+# padding
+--break-blocks
+--pad-oper
+--pad-comma
+--pad-include
+--pad-header
+--unpad-paren
+--unpad-brackets
+
+# empty lines
+--delete-empty-lines
+--squeeze-lines=1
+--squeeze-ws
+--align-pointer=name
+
+# formatting options
+--break-closing-braces
+--break-one-line-headers
+--remove-braces
+--close-templates
+
