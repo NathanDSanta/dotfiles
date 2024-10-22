@@ -6,4 +6,5 @@ vim.keymap.set('n', '<leader>ww', '<cmd>w<CR>')
 vim.keymap.set('n', '<leader>wq', '<cmd>wq<CR>')
 vim.keymap.set('n', '<leader>qq', '<cmd>q<CR>')
 vim.keymap.set('n', '<leader>qf', '<cmd>q!<CR>')
+vim.keymap.set('n', '<leader>g', '<cmd>:Neotree git_status<CR>')
 

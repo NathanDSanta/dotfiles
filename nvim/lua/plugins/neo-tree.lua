@@ -83,11 +83,11 @@ return {
 					end,
 					-- The next two settings are only a fallback, if you use nvim-web-devicons and configure default icons there
 					-- then these will never be used.
-					default = "*",
+					default = "",
 					highlight = "NeoTreeFileIcon",
 				},
 				modified = {
-					symbol = "[+]",
+					symbol = "",
 					highlight = "NeoTreeModified",
 				},
 				name = {
@@ -104,10 +104,10 @@ return {
 						renamed = "󰁕", -- this can only be used in the git_status source
 						-- Status type
 						untracked = "",
-						ignored = "",
-						unstaged = "󰄱",
-						staged = "",
-						conflict = "",
+						ignored = "",
+						unstaged = "󱟃",
+						staged = "󰒅",
+						conflict = "",
 					},
 				},
 				-- If you don't want to use these columns, you can set `enabled = false` for each of them individually
