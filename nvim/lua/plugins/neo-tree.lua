@@ -3,7 +3,7 @@ return {
 	branch = "v3.x",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+		"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
 		"3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		{
@@ -38,9 +38,10 @@ return {
 			popup_border_style = "rounded",
 			enable_git_status = true,
 			enable_diagnostics = true,
+			-- enable_normal_mode_for_inputs = false,                             -- Enable normal mode for input dialogs.
 			open_files_do_not_replace_types = { "terminal", "trouble", "qf" }, -- when opening files, do not use windows containing these filetypes or buftypes
-			sort_case_insensitive = false, -- used when sorting files and directories in the tree
-			sort_function = nil, -- use a custom function for sorting files and directories in the tree
+			sort_case_insensitive = false,                                  -- used when sorting files and directories in the tree
+			sort_function = nil,                                            -- use a custom function for sorting files and directories in the tree
 			-- sort_function = function (a,b)
 			--       if a.type == b.type then
 			--           return a.path > b.path
@@ -70,24 +71,13 @@ return {
 					folder_closed = "",
 					folder_open = "",
 					folder_empty = "󰜌",
-					provider = function(icon, node, state) -- default icon provider utilizes nvim-web-devicons if available
-						if node.type == "file" or node.type == "terminal" then
-							local success, web_devicons = pcall(require, "nvim-web-devicons")
-							local name = node.type == "terminal" and "terminal" or node.name
-							if success then
-								local devicon, hl = web_devicons.get_icon(name)
-								icon.text = devicon or icon.text
-								icon.highlight = hl or icon.highlight
-							end
-						end
-					end,
 					-- The next two settings are only a fallback, if you use nvim-web-devicons and configure default icons there
 					-- then these will never be used.
-					default = "",
+					default = "*",
 					highlight = "NeoTreeFileIcon",
 				},
 				modified = {
-					symbol = "",
+					symbol = "[+]",
 					highlight = "NeoTreeModified",
 				},
 				name = {
@@ -100,14 +90,14 @@ return {
 						-- Change type
 						added = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
 						modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
-						deleted = "✖", -- this can only be used in the git_status source
-						renamed = "󰁕", -- this can only be used in the git_status source
+						deleted = "", -- this can only be used in the git_status source
+						renamed = " ", -- this can only be used in the git_status source
 						-- Status type
 						untracked = "",
-						ignored = "",
-						unstaged = "󱟃",
-						staged = "󰒅",
-						conflict = "",
+						ignored = "",
+						unstaged = "",
+						staged = "",
+						conflict = "",
 					},
 				},
 				-- If you don't want to use these columns, you can set `enabled = false` for each of them individually
@@ -150,9 +140,8 @@ return {
 					["<2-LeftMouse>"] = "open",
 					["<cr>"] = "open",
 					["<esc>"] = "cancel", -- close preview or floating neo-tree window
-					["P"] = { "toggle_preview", config = { use_float = true, use_image_nvim = true } },
-					-- Read `# Preview Mode` for more information
-					["l"] = "focus_preview",
+					["P"] = { "toggle_preview", config = { use_float = true } },
+					["l"] = "open",
 					["S"] = "open_split",
 					["s"] = "open_vsplit",
 					-- ["S"] = "split_with_window_picker",
@@ -200,11 +189,18 @@ return {
 			filesystem = {
 				filtered_items = {
 					visible = false, -- when true, they will just be displayed differently than normal items
-					hide_dotfiles = true,
-					hide_gitignored = true,
-					hide_hidden = true, -- only works on Windows for hidden files/directories
+					hide_dotfiles = false,
+					hide_gitignored = false,
+					hide_hidden = false, -- only works on Windows for hidden files/directories
 					hide_by_name = {
-						--"node_modules"
+						".DS_Store",
+						"thumbs.db",
+						"node_modules",
+						"__pycache__",
+						".virtual_documents",
+						".git",
+						".python-version",
+						".venv",
 					},
 					hide_by_pattern = { -- uses glob style patterns
 						--"*.meta",
@@ -212,9 +208,6 @@ return {
 					},
 					always_show = { -- remains visible even if other settings would normally hide it
 						--".gitignored",
-					},
-					always_show_by_pattern = { -- uses glob style patterns
-						--".env*",
 					},
 					never_show = { -- remains hidden even if visible is toggled to true, this overrides always_show
 						--".DS_Store",
@@ -225,11 +218,11 @@ return {
 					},
 				},
 				follow_current_file = {
-					enabled = false, -- This will find and focus the file in the active buffer every time
+					enabled = false,                  -- This will find and focus the file in the active buffer every time
 					--               -- the current file is changed while the tree is open.
-					leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
+					leave_dirs_open = false,          -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
 				},
-				group_empty_dirs = false, -- when true, empty folders will be grouped together
+				group_empty_dirs = false,           -- when true, empty folders will be grouped together
 				hijack_netrw_behavior = "open_default", -- netrw disabled, opening a directory opens neo-tree
 				-- in whatever position is specified in window.position
 				-- "open_current",  -- netrw disabled, opening a directory opens within the
@@ -258,14 +251,12 @@ return {
 						["on"] = { "order_by_name", nowait = false },
 						["os"] = { "order_by_size", nowait = false },
 						["ot"] = { "order_by_type", nowait = false },
-						-- ['<key>'] = function(state) ... end,
 					},
 					fuzzy_finder_mappings = { -- define keymaps for filter popup window in fuzzy_finder_mode
 						["<down>"] = "move_cursor_down",
 						["<C-n>"] = "move_cursor_down",
 						["<up>"] = "move_cursor_up",
 						["<C-p>"] = "move_cursor_up",
-						-- ['<key>'] = function(state, scroll_padding) ... end,
 					},
 				},
 
@@ -273,7 +264,7 @@ return {
 			},
 			buffers = {
 				follow_current_file = {
-					enabled = true, -- This will find and focus the file in the active buffer every time
+					enabled = true,     -- This will find and focus the file in the active buffer every time
 					--              -- the current file is changed while the tree is open.
 					leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
 				},
@@ -316,7 +307,9 @@ return {
 				},
 			},
 		})
-		vim.keymap.set("n", "<leader>n", "<cmd>:Neotree filesystem toggle left<CR>")
+
 		vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
+		vim.keymap.set("n", "<leader>e", ":Neotree toggle position=left<CR>", { noremap = true, silent = true }) -- focus file explorer
+		vim.keymap.set("n", "<leader>ngs", ":Neotree float git_status<CR>", { noremap = true, silent = true }) -- open git status window
 	end,
 }
