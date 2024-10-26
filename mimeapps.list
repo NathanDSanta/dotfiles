@@ -1,0 +1,7 @@
+[Default Applications]
+application/zip=userapp-unzip-Z281V2.desktop
+
+[Added Associations]
+application/zip=userapp-unzip-Z281V2.desktop;
+text/plain=userapp-alacritty neovim-ELXBW2.desktop;
+image/png=gimp.desktop;org.inkscape.Inkscape.desktop;chromium.desktop;feh.desktop;
