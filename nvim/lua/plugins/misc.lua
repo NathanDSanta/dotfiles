@@ -21,6 +21,14 @@ return {
 		"folke/which-key.nvim",
 	},
 	{
+		"kylechui/nvim-surround",
+		version = "*", -- Use for stability; omit to use `main` branch for the latest features
+		event = "VeryLazy",
+		config = function()
+			require("nvim-surround").setup({})
+		end
+	},
+	{
 		-- Autoclose parentheses, brackets, quotes, etc.
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
@@ -39,6 +47,14 @@ return {
 		"norcalli/nvim-colorizer.lua",
 		config = function()
 			require("colorizer").setup()
+		end,
+	},
+	{
+		"echasnovski/mini.nvim",
+		version = "*",
+		config = function()
+			require("mini.animate").setup()
+			require("mini.move").setup()
 		end,
 	},
 }

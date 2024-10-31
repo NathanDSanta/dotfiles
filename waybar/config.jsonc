@@ -23,12 +23,12 @@
         "custom/music"
     ],
     "modules-right": [
-        "network",
-        "pulseaudio",
+        // "network",
         "backlight",
         "battery",
-        "custom/notifications",
         "tray",
+        "pulseaudio",
+        "custom/notifications",
         "clock",
         // "custom/weather",
         // "custom/cycle_wall",

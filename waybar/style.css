@@ -313,10 +313,11 @@
 /* PulseAudio Module */
 #pulseaudio {
   color: @mauve;
-  border-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   margin-right: 0px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 1.25rem;
+  padding-right: 10px;
 }
 
 /* =============================== */
@@ -326,9 +327,10 @@
 /* Backlight Module */
 #backlight {
   color: @teal;
-  border-radius: 0;
-  margin-right: 0px;
-  padding-left: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+  padding-left: 1.25rem;
   padding-right: 5px;
 }
 
@@ -339,10 +341,10 @@
 /* Battery Module */
 #battery {
   color: @green;
-  border-radius: 0;
-  margin-right: 0px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   padding-left: 5px;
-  padding-right: 5px;
+  padding-right: 1.25rem;
 }
 
 #battery.charging {
@@ -376,7 +378,7 @@
   color: @mauve;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  padding-left: 5px;
+  padding-left: 10px;
   padding-right: 1.25rem;
 }
 
