@@ -68,6 +68,7 @@ return { -- Autocompletion
 			Operator = "󰆕",
 			TypeParameter = "󰊄",
 		}
+		cmp.setup.filetype("markdown", { sources = {} })
 		cmp.setup({
 			snippet = {
 				expand = function(args)

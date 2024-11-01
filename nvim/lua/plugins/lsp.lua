@@ -1,24 +1,23 @@
 return {
-  {
-    "jay-babu/mason-nvim-dap.nvim",
-    dependencies = {
-      "williamboman/mason.nvim",
-      "mfussenegger/nvim-dap",
-    },
-    opts = {
-      handlers = {},
-      ensure_installed = {
-        "codelldb",
-      }
-    },
-  },
+	{
+		"jay-babu/mason-nvim-dap.nvim",
+		dependencies = {
+			"williamboman/mason.nvim",
+			"mfussenegger/nvim-dap",
+		},
+		opts = {
+			handlers = {},
+			ensure_installed = {
+				"codelldb",
+			},
+		},
+	},
 	{
 		"williamboman/mason.nvim",
 		config = function()
 			require("mason").setup()
 		end,
-    opts = {
-    }
+		opts = {},
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
@@ -35,6 +34,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.clangd.setup({ capabilities = capabilities })
+			lspconfig.biome.setup({ capabilities = capabilities })
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
