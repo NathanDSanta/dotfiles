@@ -80,6 +80,7 @@ return {
 		pcall(require("telescope").load_extension, "ui-select")
 		pcall(require("telescope").load_extension, "cmp-cmdline")
 		pcall(require("telescope").load_extension, "workspaces")
+		pcall(require("telescope").load_extension, "flutter")
 
 		-- See `:help telescope.builtin`
 		local builtin = require("telescope.builtin")
@@ -94,6 +95,12 @@ return {
 		vim.keymap.set("n", "<leader>s.", builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
 		vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
 		vim.keymap.set("n", "<leader>wk", "<cmd> Telescope workspaces <CR>", { desc = "Open Workspace List" })
+		vim.keymap.set(
+			"n",
+			"<leader>fc",
+			"<cmd> Telescope flutter commands <CR>",
+			{ desc = "Open Flutter Commands List" }
+		)
 
 		-- Slightly advanced example of overriding default behavior and theme
 		vim.keymap.set("n", "<leader>/", function()

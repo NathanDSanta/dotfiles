@@ -26,7 +26,7 @@ return {
 		event = "VeryLazy",
 		config = function()
 			require("nvim-surround").setup({})
-		end
+		end,
 	},
 	{
 		-- Autoclose parentheses, brackets, quotes, etc.

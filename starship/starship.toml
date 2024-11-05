@@ -30,11 +30,11 @@ truncation_symbol = "…/"
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
 "~" = " "
-"documents" = "󰈙 "
-"downloads" = " "
-"music" = "󰽰"
-"pictures" = " "
-"videos" = " "
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰽰"
+"Pictures" = " "
+"Videos" = " "
 "important" = "󰜦 "
 "uni" = "󰑴 "
 # Keep in mind that the order matters. For example:

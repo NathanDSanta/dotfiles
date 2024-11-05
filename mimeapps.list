@@ -4,5 +4,5 @@ application/zip=userapp-unzip-Z281V2.desktop
 [Added Associations]
 application/zip=userapp-unzip-Z281V2.desktop;
 text/plain=userapp-alacritty neovim-ELXBW2.desktop;
-image/png=gimp.desktop;org.inkscape.Inkscape.desktop;chromium.desktop;feh.desktop;
+image/png=chromium.desktop;gimp.desktop;org.inkscape.Inkscape.desktop;feh.desktop;
 image/jpeg=org.inkscape.Inkscape.desktop;gimp.desktop;
