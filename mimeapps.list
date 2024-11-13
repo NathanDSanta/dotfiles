@@ -10,4 +10,6 @@ x-scheme-handler/unknown=brave-browser.desktop
 application/zip=userapp- -SKMGW2.desktop;userapp-unzip extracted-V82EW2.desktop;userapp-unzip-Z281V2.desktop;
 text/plain=userapp-alacritty neovim-ELXBW2.desktop;
 image/png=chromium.desktop;gimp.desktop;org.inkscape.Inkscape.desktop;feh.desktop;
-image/jpeg=org.inkscape.Inkscape.desktop;gimp.desktop;
+image/jpeg=org.gnome.eog.desktop;org.inkscape.Inkscape.desktop;gimp.desktop;
+text/csv=code.desktop;
+video/x-matroska=vlc.desktop;

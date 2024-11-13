@@ -6,7 +6,7 @@
 --indent-modifiers
 
 # padding
---break-blocks
+--break-blocks=all
 --pad-oper
 --pad-comma
 --pad-include

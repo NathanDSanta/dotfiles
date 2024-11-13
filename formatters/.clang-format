@@ -1,0 +1,30 @@
+BasedOnStyle: Google
+IndentWidth: 2
+
+#Alignment
+AlignEscapedNewlines: Left
+AlignOperands: AlignAfterOperator
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 2
+
+
+#Allow
+AllowAllArgumentsOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseExpressionOnASingleLine: true
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: WithoutElse
+
+#Braces
+BracedInitializerIndentWidth: 1
+
+#Breaks
+BreakFunctionDefinitionParameters: false
+BreakTemplateDeclarations: Yes
+
+ColumnLimit: 0
+EmptyLineBeforeAccessModifier: Always
+IncludeBlocks: Regroup
+PointerAlignment: Right

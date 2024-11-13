@@ -34,14 +34,18 @@ return {
 		vim.fn.sign_define("DiagnosticSignHint", { text = "󰌵", texthl = "DiagnosticSignHint" })
 
 		require("neo-tree").setup({
+      source_selector = {
+        statusline = false,
+        winbar = true
+      },
 			close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
 			popup_border_style = "rounded",
 			enable_git_status = true,
 			enable_diagnostics = true,
 			-- enable_normal_mode_for_inputs = false,                             -- Enable normal mode for input dialogs.
 			open_files_do_not_replace_types = { "terminal", "trouble", "qf" }, -- when opening files, do not use windows containing these filetypes or buftypes
-			sort_case_insensitive = false,                -- used when sorting files and directories in the tree
-			sort_function = nil,                          -- use a custom function for sorting files and directories in the tree
+			sort_case_insensitive = false, -- used when sorting files and directories in the tree
+			sort_function = nil, -- use a custom function for sorting files and directories in the tree
 			-- sort_function = function (a,b)
 			--       if a.type == b.type then
 			--           return a.path > b.path
@@ -56,6 +60,28 @@ return {
 						vim.cmd([[
           setlocal relativenumber
         ]])
+					end,
+				},
+				{
+					event = "file_open_requested",
+					handler = function()
+						-- auto close
+						-- vim.cmd("Neotree close")
+						-- OR
+						require("neo-tree.command").execute({ action = "close" })
+					end,
+				},
+				{
+					event = "after_render",
+					handler = function(state)
+						if state.current_position == "left" or state.current_position == "right" then
+							vim.api.nvim_win_call(state.winid, function()
+								local str = require("neo-tree.ui.selector").get()
+								if str then
+									_G.__cached_neo_tree_selector = str
+								end
+							end)
+						end
 					end,
 				},
 			},
@@ -317,9 +343,5 @@ return {
 				},
 			},
 		})
-
-		vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
-		vim.keymap.set("n", "<leader>e", ":Neotree toggle position=left<CR>", { noremap = true, silent = true }) -- focus file explorer
-		vim.keymap.set("n", "<leader>ngs", ":Neotree float git_status<CR>", { noremap = true, silent = true }) -- open git status window
 	end,
 }
