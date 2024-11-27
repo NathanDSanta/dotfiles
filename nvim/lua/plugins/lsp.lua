@@ -36,6 +36,7 @@ return {
 			lspconfig.clangd.setup({ capabilities = capabilities })
 			lspconfig.biome.setup({ capabilities = capabilities })
 			lspconfig.cssls.setup({ capabilities = capabilities })
+			lspconfig.ast_grep.setup({ capabilities = capabilities })
 		end,
 	},
 }

@@ -8,7 +8,6 @@ AlignTrailingComments:
   Kind: Always
   OverEmptyLines: 2
 
-
 #Allow
 AllowAllArgumentsOnNextLine: false
 AllowAllParametersOfDeclarationOnNextLine: false
@@ -24,7 +23,6 @@ BracedInitializerIndentWidth: 1
 BreakFunctionDefinitionParameters: false
 BreakTemplateDeclarations: Yes
 
-ColumnLimit: 0
 EmptyLineBeforeAccessModifier: Always
 IncludeBlocks: Regroup
 PointerAlignment: Right

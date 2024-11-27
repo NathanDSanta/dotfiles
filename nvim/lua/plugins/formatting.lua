@@ -17,6 +17,7 @@ return {
 				-- 	extra_args = { "--project=~/.config/formatters/.astylerc" },
 				-- }),
 				null_ls.builtins.formatting.black,
+        null_ls.builtins.formatting.dart_format,
 			},
 		})
 

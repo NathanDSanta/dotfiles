@@ -22,7 +22,8 @@ return {
     "sindrets/diffview.nvim",
     config = function ()
       require("diffview").setup()
+      vim.keymap.set("n", "<leader>gd", "<cmd>DiffviewOpen<CR>", {})
+      vim.keymap.set("n", "<leader>gc", "<cmd>DiffviewClose<CR>", {})
     end
-
   }
 }
