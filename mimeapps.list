@@ -8,6 +8,7 @@ x-scheme-handler/unknown=brave-browser.desktop
 text/x-c++src=userapp-kitty --execute nvim %f-VFPEX2.desktop
 text/x-chdr=userapp-kitty --execute nvim %f-VFPEX2.desktop
 application/x-xz-compressed-tar=userapp-tar -xf extracted-R0M9W2.desktop
+application/vnd.rar=userapp-unrar e-KHP7X2.desktop
 
 [Added Associations]
 application/zip=userapp-unzip extracted-V82EW2.desktop;org.kde.ark.desktop;userapp- -SKMGW2.desktop;userapp-unzip-Z281V2.desktop;
@@ -20,3 +21,4 @@ text/x-c++src=userapp-kitty --execute nvim %f-VFPEX2.desktop;
 text/x-chdr=userapp-kitty --execute nvim %f-VFPEX2.desktop;
 application/x-shellscript=nvim.desktop;
 application/x-xz-compressed-tar=userapp-unzip extracted-V82EW2.desktop;userapp-tar -xf extracted-R0M9W2.desktop;
+application/vnd.rar=userapp-unrar e-KHP7X2.desktop;
