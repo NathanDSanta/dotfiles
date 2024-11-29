@@ -20,9 +20,15 @@ style_user = "fg:#ff79c6 "
 style_root = "fg:#ff79c6 "
 format = '[   󰦈 ]($style)' # $user
 
+[hostname]
+ssh_only = true
+ssh_symbol = '󰖟 '
+style = "fg:#8be9fd "
+format = ' [$ssh_symbol$hostname]($style)'
+
 [directory]
 style = "fg:#8be9fd "
-format = "[ $path ]($style)"
+format = " [ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -37,7 +43,6 @@ truncation_symbol = "…/"
 "videos" = " "
 "important" = "󰜦 "
 "uni" = "󰑴 "
-"Bas" = "󰖟 "
 # Keep in mind that the order matters. For example:
 # will not be replaced, because "Documents" was already substituted before.
 # So either put "Important Documents" before "Documents" or use the substituted version:
