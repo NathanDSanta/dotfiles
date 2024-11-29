@@ -1,6 +1,7 @@
 format = """\
 $username\
 [](fg:#bd93f9)\
+$hostname
 $directory\
 [ ](fg:#bd93f9)\
 $git_branch\
