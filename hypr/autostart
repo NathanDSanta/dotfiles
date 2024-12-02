@@ -3,6 +3,7 @@
 # Policy Authentication Agent
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 eval $(/usr/bin/gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
+eval $(ssh-agent)
 export $(gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
 
 # https://wiki.hyprland.org/FAQ/#some-of-my-apps-take-a-really-long-time-to-open

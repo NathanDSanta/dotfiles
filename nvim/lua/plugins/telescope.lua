@@ -81,5 +81,6 @@ return {
 		pcall(require("telescope").load_extension, "cmp-cmdline")
 		pcall(require("telescope").load_extension, "workspaces")
 		pcall(require("telescope").load_extension, "flutter")
+		pcall(require("telescope").load_extension, "remote-sshfs")
 	end,
 }
