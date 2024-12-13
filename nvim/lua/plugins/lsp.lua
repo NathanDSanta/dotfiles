@@ -40,7 +40,8 @@ return {
 			lspconfig.slint_lsp.setup({ capabilities = capabilities })
 			lspconfig.biome.setup({ capabilities = capabilities })
 			lspconfig.cssls.setup({ capabilities = capabilities })
-			lspconfig.ast_grep.setup({ capabilities = capabilities })
+			lspconfig.ast_grep.setup({ capabilities = capabilities , filetypes = {"html", "php"}})
+			lspconfig.phpactor.setup({ capabilities = capabilities })
 		end,
 	},
 }

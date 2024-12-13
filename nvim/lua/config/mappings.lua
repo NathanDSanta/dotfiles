@@ -5,105 +5,105 @@ vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true})
 local opts = { noremap = true, silent = true}
 
 -- save file
-opts["desc"] = "Save" 
+opts["desc"] = "Save"
 vim.keymap.set({ "n", "v", "i" }, "<C-s>", "<cmd> w <CR>", opts)
 
 -- save file without auto-formatting
-opts["desc"] = "Save without formatting" 
+opts["desc"] = "Save without formatting"
 vim.keymap.set("n", "<leader>ws", "<cmd>noautocmd w <CR>", opts)
 
 -- quit file
-opts["desc"] = "Quit" 
+opts["desc"] = "Quit"
 vim.keymap.set({ "n", "v", "i" }, "<C-q>", "<cmd> q <CR>", opts)
 
 -- delete single character without copying into register
-opts["desc"] = "Delete character wo saving to register" 
+opts["desc"] = "Delete character wo saving to register"
 vim.keymap.set("n", "x", '"_x', opts)
 
 -- Vertical scroll and center
-opts["desc"] = "Scroll Down" 
+opts["desc"] = "Scroll Down"
 vim.keymap.set("n", "<C-d>", "<C-d>zz", opts)
-opts["desc"] = "Scroll Up" 
+opts["desc"] = "Scroll Up"
 vim.keymap.set("n", "<C-u>", "<C-u>zz", opts)
 
 -- Find and center
-opts["desc"] = "Find next" 
+opts["desc"] = "Find next"
 vim.keymap.set("n", "n", "nzzzv", opts)
-opts["desc"] = "Find previous" 
+opts["desc"] = "Find previous"
 vim.keymap.set("n", "N", "Nzzzv", opts)
 
 -- Resize with arrows
-opts["desc"] = "Resize Up" 
+opts["desc"] = "Resize Up"
 vim.keymap.set("n", "<Up>", ":resize +2<CR>", opts)
-opts["desc"] = "Resize Down" 
+opts["desc"] = "Resize Down"
 vim.keymap.set("n", "<Down>", ":resize -2<CR>", opts)
-opts["desc"] = "Resize Left" 
+opts["desc"] = "Resize Left"
 vim.keymap.set("n", "<Left>", ":vertical resize +2<CR>", opts)
-opts["desc"] = "Resize Right" 
+opts["desc"] = "Resize Right"
 vim.keymap.set("n", "<Right>", ":vertical resize -2<CR>", opts)
 
 -- Buffers
-opts["desc"] = "Next buffer" 
+opts["desc"] = "Next buffer"
 vim.keymap.set("n", "<Tab>", ":bnext<CR>", opts)
-opts["desc"] = "Previous buffer" 
+opts["desc"] = "Previous buffer"
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", opts)
-opts["desc"] = "Delete current buffer" 
+opts["desc"] = "Delete current buffer"
 vim.keymap.set("n", "<leader>x", ":Bdelete!<CR>", opts)   -- close buffer
-opts["desc"] = "New buffer" 
+opts["desc"] = "New buffer"
 vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", opts) -- new buffer
 
 -- Window management
-opts["desc"] = "Vertical Split" 
+opts["desc"] = "Vertical Split"
 vim.keymap.set("n", "<leader>v", "<C-w>v", opts)      -- split window vertically
-opts["desc"] = "Horizontal Split" 
+opts["desc"] = "Horizontal Split"
 vim.keymap.set("n", "<leader>h", "<C-w>s", opts)      -- split window horizontally
-opts["desc"] = "Equalize window sizes" 
+opts["desc"] = "Equalize window sizes"
 vim.keymap.set("n", "<leader>se", "<C-w>=", opts)     -- make split windows equal width & height
-opts["desc"] = "Close current split window" 
+opts["desc"] = "Close current split window"
 vim.keymap.set("n", "<leader>xs", ":close<CR>", opts) -- close current split window
 
 -- Navigate between splits
-opts["desc"] = "Switch split up" 
+opts["desc"] = "Switch split up"
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>", opts)
-opts["desc"] = "Switch split down" 
+opts["desc"] = "Switch split down"
 vim.keymap.set("n", "<C-j>", ":wincmd j<CR>", opts)
-opts["desc"] = "Switch split left" 
+opts["desc"] = "Switch split left"
 vim.keymap.set("n", "<C-h>", ":wincmd h<CR>", opts)
-opts["desc"] = "Switch split right" 
+opts["desc"] = "Switch split right"
 vim.keymap.set("n", "<C-l>", ":wincmd l<CR>", opts)
 
 -- Tabs
-opts["desc"] = "New tab" 
+opts["desc"] = "New tab"
 vim.keymap.set("n", "<leader>to", ":tabnew<CR>", opts)   -- open new tab
-opts["desc"] = "Close current tab" 
+opts["desc"] = "Close current tab"
 vim.keymap.set("n", "<leader>tx", ":tabclose<CR>", opts) -- close current tab
-opts["desc"] = "Next tab" 
+opts["desc"] = "Next tab"
 vim.keymap.set("n", "<leader>tn", ":tabn<CR>", opts)     --  go to next tab
-opts["desc"] = "Previous tab" 
+opts["desc"] = "Previous tab"
 vim.keymap.set("n", "<leader>tp", ":tabp<CR>", opts)     --  go to previous tab
 
 -- Toggle line wrapping
-opts["desc"] = "Toggle line wrapping" 
+opts["desc"] = "Toggle line wrapping"
 vim.keymap.set("n", "<leader>lw", "<cmd>set wrap!<CR>", opts)
 
 -- Stay in indent mode
-opts["desc"] = "Indent inwards" 
+opts["desc"] = "Indent inwards"
 vim.keymap.set("v", "<Tab>", ">gv", opts)
-opts["desc"] = "Indent outwards" 
+opts["desc"] = "Indent outwards"
 vim.keymap.set("v", "<S-Tab>", "<gv", opts)
 
 -- Keep last yanked when pasting
-opts["desc"] = "Keep last yanked when pasting" 
+opts["desc"] = "Keep last yanked when pasting"
 vim.keymap.set("v", "p", '"_dP', opts)
 
 -- Diagnostic keymaps
-opts["desc"] = "Next diagnostic message" 
+opts["desc"] = "Next diagnostic message"
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
-opts["desc"] = "Previous diagnostic message" 
+opts["desc"] = "Previous diagnostic message"
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
-opts["desc"] = "Open floating diagnostic message" 
+opts["desc"] = "Open floating diagnostic message"
 vim.keymap.set("n", "<leader>dm", vim.diagnostic.open_float, opts)
-opts["desc"] = "Open diagnostics list" 
+opts["desc"] = "Open diagnostics list"
 vim.keymap.set("n", "<leader>dl", vim.diagnostic.setloclist, opts)
 
 -- sshfs
@@ -191,3 +191,9 @@ vim.keymap.set("n", "<leader>ngs", ":Neotree float git_status<CR>", opts)   -- o
 --None-ls
 vim.keymap.set("n", "<leader>fd", vim.lsp.buf.format, {})
 
+-- Cmake
+vim.keymap.set("n", "<leader>cbc", "<cmd>!cmake -B build<CR>", {})
+vim.keymap.set("n", "<leader>cbb", "<cmd>!cmake --build build<CR>", {})
+
+-- Slint
+vim.keymap.set("n", "<leader>sv", "<cmd>!slint-viewer %<CR>", {})

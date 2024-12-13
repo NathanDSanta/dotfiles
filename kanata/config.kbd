@@ -1,6 +1,8 @@
 
 (defsrc
   caps
+  ralt
+  lctrl
 )
 
 (defalias
@@ -9,5 +11,7 @@
 
 (deflayer base
   @escctrl
+  lmet
+  caps
 )
 
