@@ -38,6 +38,30 @@
 @define-color flamingo #f2cdcd;
 @define-color rosewater #f5e0dc;
 
+/*
+* Dracula Palette
+*/
+
+@define-color dbg #282a36;
+@define-color dfg #f8f8f2;
+@define-color dselection #44475a;
+@define-color dcomment #6272a4;
+@define-color dred #ff5555;
+@define-color dorange #ffb86c;
+@define-color dyellow #f1fa8c;
+@define-color dgreen #50fa7b;
+@define-color dpurple #bd93f9;
+@define-color dblack #191a21;
+@define-color dcyan #8be9fd;
+@define-color dpink #ff79c6;
+@define-color dbred #ff6e6e;
+@define-color dbgreen #69ff94;
+@define-color dbyellow #ffffa5;
+@define-color dbpurple #d6acff;
+@define-color dbpink #ff92df;
+@define-color dbcyan #a4ffff;
+@define-color dbwhite #ffffff;
+
 /* =============================== */
 /* Universal Styling */
 * {
@@ -57,6 +81,7 @@
   background: transparent;
   color: @text;
 }
+
 
 /* =============================== */
 
@@ -88,16 +113,15 @@
 #custom-clipboard,
 #custom-ss,
 #custom-weather {
-  background-color: @surface0;
+  background-color: @dbg;
   color: @text;
   border-radius: 16px;
   padding: 0.5rem 1rem;
-  box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px;
-  margin-top: 10px;
-  /*
-    margin-bottom: 10px;
-*/
-  margin-right: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.116) 2px 2px 5px 2px; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 /* =============================== */
@@ -112,44 +136,50 @@
 /* =============================== */
 /* Workspaces */
 #workspaces {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 #workspaces * {
   font-size: 20px;
   font-family: "UbuntuMono Nerd Font Mono";
   font-weight: bold;
-  color: @surface0;
+  color: @dblack;
 }
 
 #workspaces button {
-  background-color: @surface3;
-  color: @surface0;
+  background-color: @dselection;
+  color: @dselection;
   border-radius: 100%;
   /* font-family: "Font Awesome 6"; */
   min-height: 14px;
   min-width: 14px;
-  margin: 5px 5px;
+  margin: 1px 6px;
   padding: 0px 4px;
   transition: all 0.5s cubic-bezier(0.33, 1.0, 0.68, 1.0);
   /* easeInOutCubic  */
   /* transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.68); */
-  box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px;
+  /* box-shadow: rgba(0, 0, 0, 0.288) 2px 2px 5px 2px; */
+  box-shadow: inset @dbg 0px 0px 2px 1px;
 }
 
 #workspaces button.active {
   color: @surface0;
   border-radius: 1rem;
   padding: 0px 12px;
-  background: radial-gradient(circle, rgba(203, 166, 247, 0) 0%, rgba(193, 168, 247, 1) 12%, rgba(249, 226, 175, 1) 19%, rgba(189, 169, 247, 1) 20%, rgba(182, 171, 247, 1) 24%, rgba(198, 255, 194, 1) 36%, rgba(177, 172, 247, 1) 37%, rgba(170, 173, 248, 1) 48%, rgba(255, 255, 255, 1) 52%, rgba(166, 174, 248, 1) 52%, rgba(160, 175, 248, 1) 59%, rgba(148, 226, 213, 1) 66%, rgba(155, 176, 248, 1) 67%, rgba(152, 177, 248, 1) 68%, rgba(205, 214, 244, 1) 77%, rgba(148, 178, 249, 1) 78%, rgba(144, 179, 250, 1) 82%, rgba(180, 190, 254, 1) 83%, rgba(141, 179, 250, 1) 90%, rgba(137, 180, 250, 1) 100%);
+  /* background: radial-gradient(circle, rgba(203, 166, 247, 0) 0%, rgba(193, 168, 247, 1) 12%, rgba(249, 226, 175, 1) 19%, rgba(189, 169, 247, 1) 20%, rgba(182, 171, 247, 1) 24%, rgba(198, 255, 194, 1) 36%, rgba(177, 172, 247, 1) 37%, rgba(170, 173, 248, 1) 48%, rgba(255, 255, 255, 1) 52%, rgba(166, 174, 248, 1) 52%, rgba(160, 175, 248, 1) 59%, rgba(148, 226, 213, 1) 66%, rgba(155, 176, 248, 1) 67%, rgba(152, 177, 248, 1) 68%, rgba(205, 214, 244, 1) 77%, rgba(148, 178, 249, 1) 78%, rgba(144, 179, 250, 1) 82%, rgba(180, 190, 254, 1) 83%, rgba(141, 179, 250, 1) 90%, rgba(137, 180, 250, 1) 100%); */
+  background: radial-gradient(circle, @dfg 0%, @dpurple 20%, @dbpurple 40%, @dpink 60%, @dbpink 80%, @dfg 100%); /* 0,12,19,20,24,36,37,48,52,,*/
   background-size: 400% 400%;
   animation: gradient_f 20s ease-in-out infinite;
   transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
 }
 
 #workspaces button:hover {
-  background-color: @mauve;
+  background: radial-gradient(circle, @dfg 0%, @dpurple 20%, @dbpurple 40%, @dpink 60%, @dbpink 80%, @dfg 100%); /* 0,12,19,20,24,36,37,48,52,,*/
+  background-size: 400% 400%;
+  animation: gradient_f 20s ease-in-out infinite;
+  transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
+  /* background-color: @dbpink; */
 }
 
 @keyframes gradient {
@@ -191,7 +221,7 @@
 }
 
 #language {
-  color: @peach;
+  color: @dfg;
   font-size: 15px;
   font-family: "UbuntuMono Nerd Font";
   font-weight: bold;
@@ -210,7 +240,7 @@
 #cpu,
 #memory,
 #temperature {
-  color: @blue;
+  color: @dcyan;
 }
 
 #cpu {
@@ -223,6 +253,7 @@
 #memory {
   border-radius: 0px;
   margin-right: 0px;
+  margin-left: 0px;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -230,21 +261,23 @@
 #temperature {
   border-radius: 0px;
   margin-right: 0px;
+  margin-left: 0px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 #disk {
-  color: @peach;
+  color: @dbyellow;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin-left: 0px;
   padding-left: 5px;
   padding-right: 1rem;
 }
 
 /* Updates Module */
 #custom-updates {
-  color: @sky;
+  color: @dbgreen;
 }
 
 /* =============================== */
@@ -253,7 +286,7 @@
 /* =============================== */
 /* Clock Module */
 #clock {
-  color: @flamingo;
+  color: @dbpurple;
 }
 
 /* =============================== */
@@ -317,7 +350,7 @@
 /* =============================== */
 /* Network Module */
 #network {
-  color: @blue;
+  color: @dblue;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin-right: 0px;
@@ -330,7 +363,7 @@
 /* =============================== */
 /* PulseAudio Module */
 #pulseaudio {
-  color: @mauve;
+  color: @dpink;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin-right: 0px;
@@ -344,7 +377,7 @@
 /* =============================== */
 /* Backlight Module */
 #backlight {
-  color: @teal;
+  color: @dbcyan;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin-right: 0;
@@ -358,9 +391,10 @@
 /* =============================== */
 /* Battery Module */
 #battery {
-  color: @green;
+  color: @dbgreen;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin-left:0 ;
   padding-left: 5px;
   padding-right: 1.25rem;
 }
@@ -370,11 +404,11 @@
 }
 
 #battery.warning:not(.charging) {
-  color: @maroon;
+  color: @dbyellow;
 }
 
 #battery.critical:not(.charging) {
-  color: @red;
+  color: @dbred;
   animation-name: blink;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -384,8 +418,8 @@
 
 @keyframes blink {
   to {
-    background: @red;
-    color: @surface1;
+    background: @dcomment;
+    color: @dbred;
   }
 }
 
@@ -393,9 +427,10 @@
 
 /* Notifications Module */
 #custom-notifications {
-  color: @mauve;
+  color: @dbpink;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  margin-left: 0;
   padding-left: 10px;
   padding-right: 1.25rem;
 }
@@ -404,7 +439,7 @@
 /* =============================== */
 /* Tray Module */
 #tray {
-  color: @mauve;
+  color: @dbwhite;
   padding-right: 0px;
   margin-right: 0px;
   border-top-right-radius: 0;
@@ -418,14 +453,14 @@
 /* |       Custom Modules        | */
 /* =============================== */
 #custom-custom {
-  color: @peach;
+  color: @dorange;
   padding-right: 1.25rem;
   margin-right: 0px;
 }
 
 /* Screenshot */
 #custom-ss {
-  color: @mauve;
+  color: @dbpurple;
   padding-right: 1.5rem;
 }
 
@@ -438,7 +473,7 @@
 
 /* Notifications Module */
 #custom-clipboard {
-  color: @mauve;
+  color: @dbpurple;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin-right: 0px;
@@ -447,7 +482,7 @@
 
 /* Powermenu Module */
 #custom-power {
-  color: @mauve;
+  color: @dbred;
   /* border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding-left: 8px; */

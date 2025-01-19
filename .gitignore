@@ -28,6 +28,9 @@ rstudio*/
 go*/
 CurseForge/
 .avalonia*/
+scc/
+menus/
+input-remapper-2/
 _*
 __*
 

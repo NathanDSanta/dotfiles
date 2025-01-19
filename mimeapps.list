@@ -1,5 +1,5 @@
 [Default Applications]
-application/zip=userapp- -SKMGW2.desktop
+application/zip=userapp-unzip -d extracted-IMHTY2.desktop
 text/html=brave-browser.desktop
 x-scheme-handler/http=brave-browser.desktop
 x-scheme-handler/https=brave-browser.desktop
@@ -11,7 +11,7 @@ application/x-xz-compressed-tar=userapp-tar -xf extracted-R0M9W2.desktop
 application/vnd.rar=userapp-unrar e-KHP7X2.desktop
 
 [Added Associations]
-application/zip=userapp-unzip extracted-V82EW2.desktop;org.kde.ark.desktop;userapp- -SKMGW2.desktop;userapp-unzip-Z281V2.desktop;
+application/zip=userapp-unzip extracted-V82EW2.desktop;org.kde.ark.desktop;userapp- -SKMGW2.desktop;userapp-unzip-Z281V2.desktop;userapp-unzip extracted-U5CGY2.desktop;userapp-unzip -d extracted-IMHTY2.desktop;
 text/plain=userapp-alacritty neovim-ELXBW2.desktop;
 image/png=chromium.desktop;gimp.desktop;org.inkscape.Inkscape.desktop;feh.desktop;
 image/jpeg=org.gnome.eog.desktop;org.inkscape.Inkscape.desktop;gimp.desktop;
@@ -24,3 +24,4 @@ application/x-xz-compressed-tar=userapp-unzip extracted-V82EW2.desktop;userapp-t
 application/vnd.rar=userapp-unrar e-KHP7X2.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
 text/markdown=nvim.desktop;
+application/pdf=brave-browser.desktop;

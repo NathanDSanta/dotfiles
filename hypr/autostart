@@ -36,16 +36,16 @@ $scripts/launch_waybar &
 
 swww-daemon &
 
-$scripts/wall
+# $scripts/randomWallpaper
 
 # effects
 # $scripts/tools/rgb &
 
 # Applets
-$scripts/appindicator.py &
+# $scripts/appindicator.py &
 blueman-applet &
 nm-applet --indicator &
-udisike -t &
+udiskie -t &
 pamixer -m &
 
 # other
