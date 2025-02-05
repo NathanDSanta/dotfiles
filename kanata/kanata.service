@@ -4,7 +4,7 @@ Description=kanata
 [Service]
 Restart=always
 RestartSec=3
-ExecStart=/usr/bin/kanata --cfg %E/kanata/config.kbd
+ExecStart=/usr/bin/kanata --cfg /etc/kanata/config.kbd
 Nice=-20
 
 [Install]
