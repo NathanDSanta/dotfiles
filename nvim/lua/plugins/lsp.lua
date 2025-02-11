@@ -37,6 +37,7 @@ return {
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.clangd.setup({ capabilities = capabilities })
+			lspconfig.jdtls.setup({ capabilities = capabilities })
 			lspconfig.slint_lsp.setup({ capabilities = capabilities })
 			lspconfig.biome.setup({ capabilities = capabilities })
 			lspconfig.cssls.setup({ capabilities = capabilities })
