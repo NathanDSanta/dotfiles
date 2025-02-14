@@ -36,6 +36,7 @@ $scripts/launch_waybar &
 
 swww-daemon &
 
+$scripts/automaticWallpaper &
 # $scripts/randomWallpaper
 
 # effects
