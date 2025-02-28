@@ -39,6 +39,8 @@ swww-daemon &
 $scripts/automaticWallpaper &
 # $scripts/randomWallpaper
 
+$scripts/mountBas &
+
 # effects
 # $scripts/tools/rgb &
 

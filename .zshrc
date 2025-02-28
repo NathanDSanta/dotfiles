@@ -107,6 +107,7 @@ export RUST_BACKTRACE=1
 export PATH=~/.pyenv/bin:"$PATH"
 export PATH=~/.pyenv/shims:"$PATH"
 export PATH=~/.scripts/Osu:"$PATH"
+export PATH=~/.scripts:"$PATH"
 
 export KITTY_ENABLE_WAYLAND=1
 # Set name of the theme to load --- if set to "random", it will
