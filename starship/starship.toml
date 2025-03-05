@@ -1,9 +1,9 @@
 format = """\
 $username\
-[ ](fg:#bd93f9)\
+[ ](fg:purple)\
 $hostname\
 $directory\
-[ ](fg:#bd93f9)\
+[ ](fg:purple)\
 $git_branch\
 $git_status\
 $all\
@@ -11,24 +11,35 @@ $character"""
 # Disable the blank line at the start of the prompt
 add_newline = true
 
+palette = "rose-pine-moon"
+
+[palettes.rose-pine-moon]
+grey = '#393552'
+red = '#eb6f92'
+pink = '#ea9a97'
+orange = '#f6c177'
+blue = '#3e8fb0'
+cyan = '#9ccfd8'
+purple = '#c4a7e7'
+
 [line_break]
 disabled = true
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "fg:#ff79c6 "
-style_root = "fg:#ff79c6 "
+style_user = "fg:red "
+style_root = "fg:red "
 format = '[   󰦈 ]($style)' # $user
 
 [hostname]
 ssh_only = true
 ssh_symbol = '󰖟 '
-style = "fg:#8be9fd "
+style = "fg:cyan "
 format = ' [$ssh_symbol$hostname]($style)'
 
 [directory]
-style = "fg:#8be9fd "
+style = "fg:cyan "
 format = " [$path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -51,11 +62,11 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = " "
-style = "fg:#50fa7b "
+style = "fg:pink "
 format = '[ $symbol $branch(:$remote_branch) ]($style)'
 
 [git_status]
-style = "fg:#50fa7b "
+style = "fg:blue "
 ahead = " 󰶣 ${count} "
 behind = " 󰶡 ${count} "
 diverged = " 󰶣 ${ahead_count} 󰶡 ${behind_count} "
@@ -71,113 +82,113 @@ format = '[$all_status$ahead_behind ]($style)'
 
 [aws]
 symbol = " "
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [conda]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [dart]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [c]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 detect_extensions = ["c", "cpp", "h"] 
 
 [docker_context]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol $context]($style) $path '
 
 [elixir]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [elm]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [golang]
 symbol = "ﳑ"
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [haskell]
 symbol = "λ"
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [java]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [julia]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [lua]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [nim]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [nix_shell]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [nodejs]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [perl]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [php]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [python]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [ruby]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [rust]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [swift]
 symbol = "ﯣ"
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = '[ $symbol ($version )]($style)'
 
 [package]
 symbol = ""
-style = "fg:#f1fa8c "
+style = "fg:orange "
 format = "[ $symbol $version]($style)"
 disabled = true
 
@@ -224,5 +235,5 @@ format = '[](fg:#333a56 $style)[  $time ](fg:#94e2d5 $style)'
 # Last param in the first line/row
 # fg:#3b4363 if time enabled
 [character]
-success_symbol = "[](fg:#f1fa8c)"
-error_symbol = "[](fg:#ff5555)"
+success_symbol = "[](fg:orange)"
+error_symbol = "[](fg:red)"
