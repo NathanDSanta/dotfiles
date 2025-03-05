@@ -186,6 +186,7 @@ vim.keymap.set("v", "<C-/>", "<esc><cmd>lua require('Comment.api').toggle.linewi
 --Neotree
 vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
 vim.keymap.set("n", "<leader>e", ":Neotree toggle position=left<CR>", opts) -- focus file explorer
+vim.keymap.set("n", "<leader>gl", ":Neotree git_status position=left<CR>", opts) -- focus git status
 vim.keymap.set("n", "<leader>ngs", ":Neotree float git_status<CR>", opts)   -- open git status window
 
 --None-ls
