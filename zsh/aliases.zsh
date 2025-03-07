@@ -12,9 +12,9 @@ alias uni='z ~/Documents/uni'
 alias config='z ~/.config'
 
 # ls
-alias ls='eza -lh --group-directories-first'
+alias l='eza -lh --group-directories-first'
 alias lh='eza -lah --group-directories-first'
-alias ll='eza --group-directories-first'
+alias ls='eza --group-directories-first'
 alias la='eza -A --group-directories-first'
 
 # git
@@ -23,7 +23,8 @@ alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push'
-alias gpl='git pull'
+alias gpl='git pull --recurse-submodules'
+alias glog='git log --graph --oneline --decorate --all'
 
 # Updates
 alias pacman='sudo pacman'
