@@ -33,14 +33,14 @@ opts["desc"] = "Find previous"
 vim.keymap.set("n", "N", "Nzzzv", opts)
 
 -- Resize with arrows
-opts["desc"] = "Resize Up"
-vim.keymap.set("n", "<Up>", ":resize +2<CR>", opts)
-opts["desc"] = "Resize Down"
-vim.keymap.set("n", "<Down>", ":resize -2<CR>", opts)
-opts["desc"] = "Resize Left"
-vim.keymap.set("n", "<Left>", ":vertical resize +2<CR>", opts)
-opts["desc"] = "Resize Right"
-vim.keymap.set("n", "<Right>", ":vertical resize -2<CR>", opts)
+-- opts["desc"] = "Resize Up"
+-- vim.keymap.set("n", "<Up>", ":resize +2<CR>", opts)
+-- opts["desc"] = "Resize Down"
+-- vim.keymap.set("n", "<Down>", ":resize -2<CR>", opts)
+-- opts["desc"] = "Resize Left"
+-- vim.keymap.set("n", "<Left>", ":vertical resize +2<CR>", opts)
+-- opts["desc"] = "Resize Right"
+-- vim.keymap.set("n", "<Right>", ":vertical resize -2<CR>", opts)
 
 -- Buffers
 opts["desc"] = "Next buffer"

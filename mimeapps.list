@@ -13,7 +13,7 @@ application/vnd.rar=userapp-unrar e-KHP7X2.desktop
 [Added Associations]
 application/zip=userapp-unzip extracted-V82EW2.desktop;org.kde.ark.desktop;userapp- -SKMGW2.desktop;userapp-unzip-Z281V2.desktop;userapp-unzip extracted-U5CGY2.desktop;userapp-unzip -d extracted-IMHTY2.desktop;
 text/plain=userapp-alacritty neovim-ELXBW2.desktop;
-image/png=chromium.desktop;gimp.desktop;org.inkscape.Inkscape.desktop;feh.desktop;
+image/png=imv.desktop;chromium.desktop;gimp.desktop;org.inkscape.Inkscape.desktop;feh.desktop;
 image/jpeg=org.gnome.eog.desktop;org.inkscape.Inkscape.desktop;gimp.desktop;
 text/csv=code.desktop;
 video/x-matroska=vlc.desktop;

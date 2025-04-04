@@ -20,9 +20,9 @@
         "disk",
         "custom/updates"
     ],
-    "modules-center": [
-        "custom/music"
-    ],
+    // "modules-center": [
+    //     // "custom/music"
+    // ],
     "modules-right": [
         // "network",
         "backlight",
@@ -111,23 +111,23 @@
         // "tooltip-format": "{}",
         // "exec-tooltip": "~/.scripts/updates tooltip"
     },
-    "custom/music": {
-        "format": "{icon}{0}",
-        "format-icons": {
-            "Playing": " ", // Uncomment if not using the dynamic script
-            "Paused": " ",
-            "Stopped": "&#x202d;ﭥ " // This stop symbol is RTL. So &#x202d; is left-to-right override.
-        },
-        "escape": true,
-        "tooltip": true,
-        "exec": "~/.scripts/caway -b 10 -e",
-        "return-type": "json",
-        "on-click": "playerctl play-pause",
-        "on-scroll-up": "playerctl previous",
-        "on-scroll-down": "playerctl next",
-        "on-click-right": "amberol",
-        "max-length": 35
-    },
+    // "custom/music": {
+    //     "format": "{icon}{0}",
+    //     "format-icons": {
+    //         "Playing": " ", // Uncomment if not using the dynamic script
+    //         "Paused": " ",
+    //         "Stopped": "&#x202d;ﭥ " // This stop symbol is RTL. So &#x202d; is left-to-right override.
+    //     },
+    //     "escape": true,
+    //     "tooltip": true,
+    //     "exec": "~/.scripts/caway -b 10 -e",
+    //     "return-type": "json",
+    //     "on-click": "playerctl play-pause",
+    //     "on-scroll-up": "playerctl previous",
+    //     "on-scroll-down": "playerctl next",
+    //     "on-click-right": "amberol",
+    //     "max-length": 35
+    // },
     "hyprland/window": {
         "format": "{}",
         "separate-outputs": true,

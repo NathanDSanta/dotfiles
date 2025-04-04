@@ -1,0 +1,73 @@
+[2025/03/29 12:36:00] === update info ===
+[2025/03/29 12:36:00]  platformUpdate: /home/NathanDSanta/.config/VisualParadigm/tmp/platformupdate1168126273118295776_dir/lib/platforminstaller.jar
+[2025/03/29 12:36:00]  updateIndex: 0
+[2025/03/29 12:36:00]  process: true
+[2025/03/29 12:36:00]  local server: false (patch: false)
+[2025/03/29 12:36:00]  config: false
+[2025/03/29 12:36:00]  quiet: false
+[2025/03/29 12:36:00]  init: false (force: false, version: null)
+[2025/03/29 12:36:00]  local: null
+[2025/03/29 12:36:00]  server: null
+[2025/03/29 12:36:00]  servers: null
+[2025/03/29 12:36:00]  directory: null
+[2025/03/29 12:36:00]  proxy.host: 
+[2025/03/29 12:36:00]  proxy.port: 
+[2025/03/29 12:36:00]  update from vp: false
+[2025/03/29 12:36:00]  auto updating: true
+[2025/03/29 12:36:00]  auto updating 2: false
+[2025/03/29 12:36:00]  client build: 20250321
+[2025/03/29 12:36:00]  request download key 12.0: null
+[2025/03/29 12:36:00] === Internet Connection Links ====
+[2025/03/29 12:36:00] servers: https://www.visual-paradigm.com/download/productupdate/vp.jsp
+[2025/03/29 12:36:00] latest: https://www.visual-paradigm.com/download/latestinfo.jsp
+[2025/03/29 12:36:00] documentation: https://www.visual-paradigm.com/installers/vpsuite17.2/
+[2025/03/29 12:36:00] product name: Visual Paradigm
+[2025/03/29 12:36:00] ----------------------------------
+[2025/03/29 12:36:00] === Internet Connection Links ====
+[2025/03/29 12:36:00] servers: https://www.visual-paradigm.com/download/productupdate/vp.jsp
+[2025/03/29 12:36:00] latest: https://www.visual-paradigm.com/download/latestinfo.jsp
+[2025/03/29 12:36:00] documentation: https://www.visual-paradigm.com/installers/vpsuite17.2/
+[2025/03/29 12:36:00] product name: Visual Paradigm
+[2025/03/29 12:36:00] ----------------------------------
+[2025/03/29 12:36:00] <<< Update Process >>>
+[2025/03/29 12:36:00] ----------------- Update Main (Auto) ---------------
+[2025/03/29 12:36:00] >>> read installed products: true, /home/NathanDSanta/.apps/VisualParadigm/resources/.product_installation.xml
+[2025/03/29 12:36:00] loading installed product: /home/NathanDSanta/.apps/VisualParadigm, vp, 1
+[2025/03/29 12:36:00] ---------------------------------------------
+[2025/03/29 12:36:00] Finding Server...
+[2025/03/29 12:36:00] Selected Server: Europe, https://eu10-dl.visual-paradigm.com/visual-paradigm/vp17.2/20250321/Update
+[2025/03/29 12:36:00] Trying connect server...
+[2025/03/29 12:36:00] test connection..... true, https://eu10-dl.visual-paradigm.com/visual-paradigm/vp17.2/20250321/Update/resources/vpupdateinfo.xml
+[2025/03/29 12:36:00] Auto Update Checking Update Program...
+[2025/03/29 12:36:00] >>>>>>>>>>> GET UPDATE XML FROM SERVER: false, https://eu10-dl.visual-paradigm.com/visual-paradigm/vp17.2/20250321/Update
+[2025/03/29 12:36:00] >>>>>>>>>>> GET UPDATE XML FROM SERVER 3: https://eu10-dl.visual-paradigm.com/visual-paradigm/vp17.2/20250321/Update/resources/vpupdateinfo.xml
+[2025/03/29 12:36:01] >>>>>>>>>>> GET UPDATE XML FROM SERVER 4: true, sun.net.www.protocol.http.HttpURLConnection$HttpInputStream@5f210e20
+[2025/03/29 12:36:01] >>>>>>>>>>> GET UPDATE XML FROM SERVER 7: sun.net.www.protocol.http.HttpURLConnection$HttpInputStream@5f210e20
+[2025/03/29 12:36:01] >>>>>>>>>>> GET UPDATE XML FROM SERVER 8: /home/NathanDSanta/.config/VisualParadigm/tmp/productupdatexml14100086826039422603.xml
+[2025/03/29 12:36:01] >>>>>>>>>>> GET UPDATE XML FROM SERVER 9: /home/NathanDSanta/.config/VisualParadigm/tmp/productupdatexml14100086826039422603.xml
+[2025/03/29 12:36:01] Version --- https://eu10-dl.visual-paradigm.com/visual-paradigm/vp17.2/20250321/Update 
+program: 
+	20240601
+	20240601
+product: 
+	vp
+	vp
+build: 
+	20250321
+	20250321
+suite version: 
+	17.2
+	17.2
+resume: 
+	20250321
+	null
+[2025/03/29 12:36:01] You are running the latest hotfix build. No need to update.
+[2025/03/29 13:17:10] === Java Execute =================
+[2025/03/29 13:17:10] /home/NathanDSanta/.apps/VisualParadigm/jre/bin/java
+[2025/03/29 13:17:10] -cp
+[2025/03/29 13:17:10] /home/NathanDSanta/.apps/VisualParadigm/lib/platforminstaller.jar:
+[2025/03/29 13:17:10] com.vp.platform.installer.ClearUpdateMain
+[2025/03/29 13:17:10] /home/NathanDSanta/.config/VisualParadigm/tmp/platformupdate1168126273118295776_dir
+[2025/03/29 13:17:10] --------------------
+[2025/03/29 13:17:10] /home/NathanDSanta/.apps/VisualParadigm/jre/bin/java -cp /home/NathanDSanta/.apps/VisualParadigm/lib/platforminstaller.jar: com.vp.platform.installer.ClearUpdateMain /home/NathanDSanta/.config/VisualParadigm/tmp/platformupdate1168126273118295776_dir
+[2025/03/29 13:17:10] --------------------

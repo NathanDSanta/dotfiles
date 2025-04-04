@@ -1,0 +1,494 @@
+[2025/03/29 12:27:21] [message] [Sat Mar 29 12:27:21 CET 2025]: Start Visual Paradigm [VP]: 17.2 (20250321)
+[2025/03/29 12:27:21] [message] Operating system: Linux 6.13.7-arch1-1 running on amd64
+[2025/03/29 12:27:21] [message] Java VM: 11.0.16.1 OpenJDK 64-Bit Server VM, vendor 11.0.16.1+1 Eclipse Adoptium
+[2025/03/29 12:27:21] [message] User: NathanDSanta, language: en
+[2025/03/29 12:27:21] [message] Installation ID: 5d64ad39fd2d559efe9d215e9a48d0d8
+[2025/03/29 12:27:21] [message] Memory: current=256M, max=1024M
+[2025/03/29 12:27:26] [message] start startup getLicenseKey on 29-Mar-2025
+[2025/03/29 12:27:26] [message] getLicenseKey in local ...
+[2025/03/29 12:27:26] [message] finish startup getLicenseKey
+[2025/03/29 12:27:26] [message] getVerifiedLicenseKey: null; state=Installed
+[2025/03/29 12:28:12] [message] start startup getLicenseKey on 29-Mar-2025
+[2025/03/29 12:28:12] [message] getLicenseKey in local ...
+[2025/03/29 12:28:12] [message] finish startup getLicenseKey
+[2025/03/29 12:28:13] [message] Workspace: /home/NathanDSanta/.config/VisualParadigm/ws
+[2025/03/29 12:30:08] [message] Exit Visual Paradigm
+[2025/03/29 12:30:08] [message] Saved project ".systemproject" to "/home/NathanDSanta/.config/VisualParadigm/ws/.vpprefdata/.systemproject.vpp".
+[2025/03/29 12:30:08] [message] System.exit: true
+[2025/03/29 12:30:13] [message] [Sat Mar 29 12:30:13 CET 2025]: Start Visual Paradigm Community Edition [VP CE]: 17.2 (20250321)
+[2025/03/29 12:30:13] [message] Operating system: Linux 6.13.7-arch1-1 running on amd64
+[2025/03/29 12:30:13] [message] Java VM: 11.0.16.1 OpenJDK 64-Bit Server VM, vendor 11.0.16.1+1 Eclipse Adoptium
+[2025/03/29 12:30:13] [message] User: NathanDSanta, language: en
+[2025/03/29 12:30:13] [message] Installation ID: 5d64ad39fd2d559efe9d215e9a48d0d8
+[2025/03/29 12:30:13] [message] Memory: current=256M, max=1024M
+[2025/03/29 12:30:13] [message] start startup getLicenseKey on 29-Mar-2025
+[2025/03/29 12:30:13] [message] getLicenseKey in local ...
+[2025/03/29 12:30:13] [message] finish startup getLicenseKey
+[2025/03/29 12:30:13] [message] Workspace: /home/NathanDSanta/.config/VisualParadigm/ws
+[2025/03/29 12:30:14] [message] Opening Project: /home/NathanDSanta/.config/VisualParadigm/ws/.vpprefdata/.systemproject.vpp
+[2025/03/29 12:30:52] [message] Exit Visual Paradigm
+[2025/03/29 12:30:52] [message] Saved project ".systemproject" to "/home/NathanDSanta/.config/VisualParadigm/ws/.vpprefdata/.systemproject.vpp".
+[2025/03/29 12:30:52] [message] System.exit: true
+[2025/03/29 12:30:56] [message] [Sat Mar 29 12:30:56 CET 2025]: Start Visual Paradigm Community Edition [VP CE]: 17.2 (20250321)
+[2025/03/29 12:30:56] [message] Operating system: Linux 6.13.7-arch1-1 running on amd64
+[2025/03/29 12:30:56] [message] Java VM: 11.0.16.1 OpenJDK 64-Bit Server VM, vendor 11.0.16.1+1 Eclipse Adoptium
+[2025/03/29 12:30:56] [message] User: NathanDSanta, language: en
+[2025/03/29 12:30:56] [message] Installation ID: 5d64ad39fd2d559efe9d215e9a48d0d8
+[2025/03/29 12:30:56] [message] Memory: current=256M, max=1024M
+[2025/03/29 12:30:56] [message] start startup getLicenseKey on 29-Mar-2025
+[2025/03/29 12:30:56] [message] getLicenseKey in local ...
+[2025/03/29 12:30:56] [message] finish startup getLicenseKey
+[2025/03/29 12:30:56] [message] Workspace: /home/NathanDSanta/.config/VisualParadigm/ws
+[2025/03/29 12:30:57] [message] Opening Project: /home/NathanDSanta/.config/VisualParadigm/ws/.vpprefdata/.systemproject.vpp
+[2025/03/29 12:49:03] [warning] java.io.IOException: Cannot run program "gconftool-2": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at java.base/java.lang.Runtime.exec(Runtime.java:592)
+	at v.cbf.i.a(:259)
+	at v.cee.e.b(:140)
+	at v.cee.e.a(:114)
+	at v.cee.e.b(:109)
+	at v.crc.bh.f(:94)
+	at v.crc.bh.e(:74)
+	at v.crc.bh.a(:46)
+	at v.crc.bh.<init>(:18)
+	at v.bp.f.a(:972)
+	at v.djy.p.run(:451)
+	at v.djy.g.cO(:411)
+	at v.ccr.hk.a(:1863)
+	at v.cdg.o.a(:41)
+	at v.ccr.qu.d(:947)
+	at v.dfi.apq.d(:205)
+	at v.ccr.qu.i(:834)
+	at v.ccr.ra.b(:153)
+	at v.bya.j.mouseReleased(:29)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6635)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 51 more
+
+[2025/03/29 12:49:03] [warning] java.io.IOException: Cannot run program "gconftool-2": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at java.base/java.lang.Runtime.exec(Runtime.java:592)
+	at v.cbf.i.a(:259)
+	at v.cee.e.b(:140)
+	at v.cee.e.a(:114)
+	at v.cee.e.b(:109)
+	at v.crc.bh.f(:94)
+	at v.crc.bh.e(:74)
+	at v.crc.bh.a(:46)
+	at v.crc.bh.<init>(:18)
+	at v.bp.f.a(:972)
+	at v.djy.p.run(:451)
+	at v.djy.g.cO(:411)
+	at v.ccr.hk.a(:1863)
+	at v.cdg.o.a(:41)
+	at v.ccr.qu.d(:947)
+	at v.dfi.apq.d(:205)
+	at v.ccr.qu.i(:834)
+	at v.ccr.ra.b(:153)
+	at v.bya.j.mouseReleased(:29)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6635)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 51 more
+
+[2025/03/29 13:14:35] [message] Saved project "JOCRPG" to "/home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp".
+[2025/03/29 13:15:33] [message] Saved project "JOCRPG" to "/home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp".
+[2025/03/29 13:35:55] [message] [Sat Mar 29 13:35:55 CET 2025]: Start Visual Paradigm Community Edition [VP CE]: 17.2 (20250321)
+[2025/03/29 13:35:55] [message] Operating system: Linux 6.13.7-arch1-1 running on amd64
+[2025/03/29 13:35:55] [message] Java VM: 11.0.16.1 OpenJDK 64-Bit Server VM, vendor 11.0.16.1+1 Eclipse Adoptium
+[2025/03/29 13:35:55] [message] User: NathanDSanta, language: en
+[2025/03/29 13:35:55] [message] Installation ID: 5d64ad39fd2d559efe9d215e9a48d0d8
+[2025/03/29 13:35:55] [message] Memory: current=256M, max=1024M
+[2025/03/29 13:35:56] [message] start startup getLicenseKey on 29-Mar-2025
+[2025/03/29 13:35:56] [message] getLicenseKey in local ...
+[2025/03/29 13:35:56] [message] finish startup getLicenseKey
+[2025/03/29 13:35:56] [message] Workspace: /home/NathanDSanta/.config/VisualParadigm/ws
+[2025/03/29 13:35:57] [message] Opening Project: /home/NathanDSanta/.config/VisualParadigm/ws/.vpprefdata/.systemproject.vpp
+[2025/03/29 13:36:03] [message] Opening Project: /home/NathanDSanta/.config/VisualParadigm/ws/tmp/untitled2.working
+[2025/03/29 13:36:08] [message] Opening Project: /home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp
+[2025/03/29 13:36:09] [warning] Something wrong in reading multiplicity b info to diagram
+[2025/03/29 13:36:09] [message] Open Project "/home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp", Time Used: 1 seconds, Memory: 256.0 MB (268435456), Project File Size: 836.0 KB (856064), Diagram Count: 1
+[2025/03/29 13:37:08] [message] Garbage collection diagram OLJdh6mGAqACsAWd
+[2025/03/29 13:37:08] [message] Finished garbage collection 1 diagram(s)
+[2025/03/29 13:40:31] [warning] java.io.IOException: Cannot run program "gconftool-2": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at java.base/java.lang.Runtime.exec(Runtime.java:592)
+	at v.cbf.i.a(:259)
+	at v.cee.e.b(:140)
+	at v.cee.e.a(:114)
+	at v.cee.e.b(:109)
+	at v.crc.bh.f(:94)
+	at v.crc.bh.e(:74)
+	at v.crc.bh.a(:46)
+	at v.crc.bh.<init>(:18)
+	at v.bp.f.a(:972)
+	at v.djy.p.run(:451)
+	at v.djy.g.cO(:411)
+	at v.ccr.hk.a(:1863)
+	at v.cdg.o.a(:41)
+	at v.ccr.qu.d(:947)
+	at v.dfi.apq.d(:205)
+	at v.ccr.qu.i(:834)
+	at v.ccr.ra.b(:153)
+	at v.bya.j.mouseReleased(:29)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6635)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 51 more
+
+[2025/03/29 13:40:31] [warning] java.io.IOException: Cannot run program "gconftool-2": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at java.base/java.lang.Runtime.exec(Runtime.java:592)
+	at v.cbf.i.a(:259)
+	at v.cee.e.b(:140)
+	at v.cee.e.a(:114)
+	at v.cee.e.b(:109)
+	at v.crc.bh.f(:94)
+	at v.crc.bh.e(:74)
+	at v.crc.bh.a(:46)
+	at v.crc.bh.<init>(:18)
+	at v.bp.f.a(:972)
+	at v.djy.p.run(:451)
+	at v.djy.g.cO(:411)
+	at v.ccr.hk.a(:1863)
+	at v.cdg.o.a(:41)
+	at v.ccr.qu.d(:947)
+	at v.dfi.apq.d(:205)
+	at v.ccr.qu.i(:834)
+	at v.ccr.ra.b(:153)
+	at v.bya.j.mouseReleased(:29)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:297)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6635)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4547)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 51 more
+
+[2025/03/29 14:16:40] [message] Saved project "JOCRPG" to "/home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp".
+[2025/03/29 14:17:09] [message] Opening Project: /home/NathanDSanta/Downloads/DiagramaActivitats.vpp
+[2025/03/29 14:17:09] [message] Open Project "/home/NathanDSanta/Downloads/DiagramaActivitats.vpp", Time Used: 0 seconds, Memory: 256.0 MB (268435456), Project File Size: 812.0 KB (831488), Diagram Count: 2
+[2025/03/29 14:17:31] [message] Opening Project: /home/NathanDSanta/Downloads/DiagramaActivitats.vpp
+[2025/03/29 14:17:31] [message] Open Project "/home/NathanDSanta/Downloads/DiagramaActivitats.vpp", Time Used: 0 seconds, Memory: 256.0 MB (268435456), Project File Size: 812.0 KB (831488), Diagram Count: 2
+[2025/03/29 14:18:08] [message] Opening Project: /home/NathanDSanta/Downloads/DiagramaClasses.vpp
+[2025/03/29 14:18:08] [message] Open Project "/home/NathanDSanta/Downloads/DiagramaClasses.vpp", Time Used: 0 seconds, Memory: 256.0 MB (268435456), Project File Size: 832.0 KB (851968), Diagram Count: 4
+[2025/03/29 14:18:13] [error] missing support shape type: DTBDecisionTableOverview
+[2025/03/29 14:18:13] [error] missing support shape type: SubLevelInFlow
+[2025/03/29 14:18:13] [error] missing support shape type: SubLevelOutFlow
+[2025/03/29 14:18:13] [error] missing support shape type: WireflowDecisionNode
+[2025/03/29 14:18:13] [error] missing support shape type: IFRepresented
+[2025/03/29 14:18:13] [error] missing support shape type: SoaMLServiceCategorizationDiagramOverview
+[2025/03/29 14:18:13] [error] missing support shape type: SoaMLMilestone
+[2025/03/29 14:18:13] [error] missing support shape type: SoaMLServiceInterfaceDiagramOverview
+[2025/03/29 14:18:13] [error] missing support shape type: InformationItem
+[2025/03/29 14:18:13] [error] missing support shape type: WireflowNode
+[2025/03/29 14:18:13] [error] missing support shape type: DependencyJunction
+[2025/03/29 14:18:13] [error] missing support shape type: SysMLConform2
+[2025/03/29 14:18:13] [error] missing support shape type: SoaMLServiceContractDiagramOverview
+[2025/03/29 14:18:13] [error] missing support shape type: SoaMLExternalRole
+[2025/03/29 14:18:13] [error] missing support shape type: WireflowConnector
+[2025/03/29 14:18:13] [error] missing support shape type: InformationFlow
+[2025/03/29 14:18:13] [error] missing support shape type: SoaMLServicesArchitectureDiagramOverview
+[2025/03/29 14:18:13] [error] missing support shape type: SoaMLServiceParticipantDiagramOverview
+[2025/03/29 14:18:37] [message] Opening Project: /home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp
+[2025/03/29 14:18:37] [message] Open Project "/home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp", Time Used: 0 seconds, Memory: 256.0 MB (268435456), Project File Size: 932.0 KB (954368), Diagram Count: 2
+[2025/03/29 14:41:55] [message] Saved project "JOCRPG" to "/home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp".
+[2025/03/29 17:31:37] [message] Saved project "JOCRPG" to "/home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp".
+[2025/03/29 18:01:05] [message] Exit Visual Paradigm
+[2025/03/29 18:01:07] [message] Saved project "JOCRPG" to "/home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp".
+[2025/03/29 18:01:07] [message] Saved project ".systemproject" to "/home/NathanDSanta/.config/VisualParadigm/ws/.vpprefdata/.systemproject.vpp".
+[2025/03/29 18:01:07] [message] System.exit: true
+[2025/03/31 15:39:38] [message] [Mon Mar 31 15:39:38 CEST 2025]: Start Visual Paradigm Community Edition [VP CE]: 17.2 (20250321)
+[2025/03/31 15:39:38] [message] Operating system: Linux 6.13.8-arch1-1 running on amd64
+[2025/03/31 15:39:38] [message] Java VM: 11.0.16.1 OpenJDK 64-Bit Server VM, vendor 11.0.16.1+1 Eclipse Adoptium
+[2025/03/31 15:39:38] [message] User: NathanDSanta, language: en
+[2025/03/31 15:39:38] [message] Installation ID: 5d64ad39fd2d559efe9d215e9a48d0d8
+[2025/03/31 15:39:38] [message] Memory: current=256M, max=1024M
+[2025/03/31 15:39:38] [message] start startup getLicenseKey on 31-Mar-2025
+[2025/03/31 15:39:38] [message] getLicenseKey in local ...
+[2025/03/31 15:39:38] [message] finish startup getLicenseKey
+[2025/03/31 15:39:39] [message] Workspace: /home/NathanDSanta/.config/VisualParadigm/ws
+[2025/03/31 15:39:40] [message] Opening Project: /home/NathanDSanta/.config/VisualParadigm/ws/.vpprefdata/.systemproject.vpp
+[2025/03/31 15:39:44] [message] Opening Project: /home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp
+[2025/03/31 15:39:47] [message] Open Project "/home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp", Time Used: 3 seconds, Memory: 256.0 MB (268435456), Project File Size: 1.14 MB (1191936), Diagram Count: 2
+[2025/03/31 15:40:40] [warning] java.io.IOException: Cannot run program "gconftool-2": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at java.base/java.lang.Runtime.exec(Runtime.java:592)
+	at v.cbf.i.a(:259)
+	at v.cee.e.b(:140)
+	at v.cee.e.a(:114)
+	at v.cee.e.b(:109)
+	at v.crc.bh.f(:94)
+	at v.crc.bh.e(:74)
+	at v.crc.bh.a(:46)
+	at v.crc.bh.<init>(:18)
+	at v.bp.f.a(:972)
+	at v.dfi.aec.i(:2243)
+	at v.dfi.aec.a(:2222)
+	at v.ccr.mt.mouseClicked(:6294)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4556)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 48 more
+
+[2025/03/31 15:40:40] [warning] java.io.IOException: Cannot run program "gconftool-2": error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1128)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1071)
+	at java.base/java.lang.Runtime.exec(Runtime.java:592)
+	at v.cbf.i.a(:259)
+	at v.cee.e.b(:140)
+	at v.cee.e.a(:114)
+	at v.cee.e.b(:109)
+	at v.crc.bh.f(:94)
+	at v.crc.bh.e(:74)
+	at v.crc.bh.a(:46)
+	at v.crc.bh.<init>(:18)
+	at v.bp.f.a(:972)
+	at v.dfi.aec.i(:2243)
+	at v.dfi.aec.a(:2222)
+	at v.ccr.mt.mouseClicked(:6294)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseClicked(AWTEventMulticaster.java:277)
+	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6638)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3342)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6400)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4918)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4556)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4488)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2307)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:340)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:271)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1107)
+	... 48 more
+
+[2025/03/31 15:40:45] [message] Garbage collection diagram iNLnh6mGAqACsAh1
+[2025/03/31 15:40:45] [message] Finished garbage collection 1 diagram(s)
+[2025/03/31 15:42:53] [error] missing support shape type: DTBDecisionTableOverview
+[2025/03/31 15:42:53] [error] missing support shape type: SubLevelInFlow
+[2025/03/31 15:42:53] [error] missing support shape type: SubLevelOutFlow
+[2025/03/31 15:42:53] [error] missing support shape type: WireflowDecisionNode
+[2025/03/31 15:42:53] [error] missing support shape type: IFRepresented
+[2025/03/31 15:42:53] [error] missing support shape type: SoaMLServiceCategorizationDiagramOverview
+[2025/03/31 15:42:53] [error] missing support shape type: SoaMLMilestone
+[2025/03/31 15:42:53] [error] missing support shape type: SoaMLServiceInterfaceDiagramOverview
+[2025/03/31 15:42:53] [error] missing support shape type: InformationItem
+[2025/03/31 15:42:53] [error] missing support shape type: WireflowNode
+[2025/03/31 15:42:53] [error] missing support shape type: DependencyJunction
+[2025/03/31 15:42:53] [error] missing support shape type: SysMLConform2
+[2025/03/31 15:42:53] [error] missing support shape type: SoaMLServiceContractDiagramOverview
+[2025/03/31 15:42:53] [error] missing support shape type: SoaMLExternalRole
+[2025/03/31 15:42:53] [error] missing support shape type: WireflowConnector
+[2025/03/31 15:42:53] [error] missing support shape type: InformationFlow
+[2025/03/31 15:42:53] [error] missing support shape type: SoaMLServicesArchitectureDiagramOverview
+[2025/03/31 15:42:53] [error] missing support shape type: SoaMLServiceParticipantDiagramOverview
+[2025/03/31 15:51:51] [warning] Error in Attribute: - : int
+[2025/03/31 17:12:47] [message] Saved project "JOCRPG" to "/home/NathanDSanta/Documents/VPProjects/JOCRPG.vpp".
+[2025/03/31 17:12:47] [message] Opening Project: /home/NathanDSanta/Downloads/DiagramaCasosUs (1).vpp
+[2025/03/31 17:12:47] [message] Open Project "/home/NathanDSanta/Downloads/DiagramaCasosUs (1).vpp", Time Used: 0 seconds, Memory: 256.0 MB (268435456), Project File Size: 916.0 KB (937984), Diagram Count: 5
+[2025/03/31 17:13:02] [message] Opening Project: /home/NathanDSanta/Downloads/DiagramaCasosUs (1).vpp
+[2025/03/31 17:13:02] [message] Open Project "/home/NathanDSanta/Downloads/DiagramaCasosUs (1).vpp", Time Used: 0 seconds, Memory: 256.0 MB (268435456), Project File Size: 916.0 KB (937984), Diagram Count: 5
+[2025/03/31 17:13:47] [message] Garbage collection diagram YAjOh6mD.AACAQWd
+[2025/03/31 17:13:47] [message] Garbage collection diagram zU0Fh6mD.AACAQ.2
+[2025/03/31 17:13:47] [message] Finished garbage collection 2 diagram(s)
+[2025/03/31 17:47:33] [message] Saved project "DiagramaCasosUs" to "/home/NathanDSanta/Downloads/DiagramaCasosUs (1).vpp".
+[2025/03/31 17:47:36] [message] Exit Visual Paradigm
+[2025/03/31 17:47:36] [message] Saved project ".systemproject" to "/home/NathanDSanta/.config/VisualParadigm/ws/.vpprefdata/.systemproject.vpp".
+[2025/03/31 17:47:36] [message] System.exit: true
