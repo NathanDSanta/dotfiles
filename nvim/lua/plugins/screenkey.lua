@@ -12,7 +12,7 @@ return {
 				width = 20,
 				height = 2,
 				border = "single",
-				title = "Screenkey",
+				title = "ScreenKey",
 				title_pos = "center",
 				style = "minimal",
 				focusable = false,

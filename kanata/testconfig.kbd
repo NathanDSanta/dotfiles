@@ -1,0 +1,10 @@
+(defsrc
+  a r s t n e i o
+  tab
+)
+
+(deflayer base
+ (tap-hold 150 150 a lalt) (tap-hold 150 150 r lmet) (tap-hold 150 150 s lshift) (tap-hold 150 150 t lctrl)
+ (tap-hold 150 150 n lctrl) (tap-hold 150 150 e lshift) (tap-hold 150 150 i lmet) (tap-hold 150 150 o lalt)
+ esc
+)

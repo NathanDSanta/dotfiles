@@ -1,0 +1,43 @@
+return {
+  -- hot-reload.nvim [config reload]
+-- https://github.com/Zeioth/hot-reload.nvim
+--   "Zeioth/hot-reload.nvim",
+--   dependencies = { "nvim-lua/plenary.nvim" },
+--   event = "BufEnter",
+--   opts = function()
+--     local config_dir = vim.fn.stdpath("config") .. "/lua/"
+--     local settings = config_dir .. "config/"
+--     local plugins = config_dir .. "plugins/"
+--     return {
+--       -- Files to be hot-reloaded when modified.
+--       reload_files = {
+--         settings .. "keybinds.lua",
+--         settings .. "settings.lua",
+--         settings .. "snippets.lua",
+--         plugins .. "alpha.lua",
+--         plugins .. "bufferline.lua",
+--         plugins .. "completions.lua",
+--         plugins .. "debugging.lua",
+--         plugins .. "flutter-tools.lua",
+--         plugins .. "formatting.lua",
+--         plugins .. "gitsigns.lua",
+--         plugins .. "hot-reload.lua",
+--         plugins .. "images.lua",
+--         plugins .. "indentcolors.lua",
+--         plugins .. "lsp.lua",
+--         plugins .. "lua-line.lua",
+--         plugins .. "misc.lua",
+--         plugins .. "neo-tree.lua",
+--         plugins .. "noice.lua",
+--         plugins .. "screenkey.lua",
+--         plugins .. "sshfs.lua",
+--         plugins .. "telescope.lua",
+--         plugins .. "theme.lua",
+--         plugins .. "toggle-term.lua",
+--         plugins .. "tree-sitter.lua",
+--         plugins .. "workspaces.lua",
+--         plugins .. "writing.lua",
+--       },
+--     }
+--   end
+}

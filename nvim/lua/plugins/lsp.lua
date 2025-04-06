@@ -36,6 +36,7 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
+			lspconfig.ts_ls.setup({ capabilities = capabilities })
 			lspconfig.clangd.setup({ capabilities = capabilities })
 			lspconfig.jdtls.setup({ capabilities = capabilities })
 			lspconfig.slint_lsp.setup({ capabilities = capabilities })
