@@ -20,11 +20,9 @@ scripts=~/.scripts
 # notification daemon
 swaync &
 
-# lock/suspend when idle
-hypridle &
-
 # waybar
-$scripts/launch_waybar &
+hyprpanel &
+hypridle &
 # $scripts/dynamic &
 
 # music daemon
