@@ -21,8 +21,8 @@ scripts=~/.scripts
 swaync &
 
 # waybar
-hyprpanel &
 hypridle &
+$scripts/launch_waybar &
 # $scripts/dynamic &
 
 # music daemon
