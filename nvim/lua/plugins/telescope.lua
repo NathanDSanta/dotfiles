@@ -1,17 +1,15 @@
 return {
   "nvim-telescope/telescope.nvim",
   dependencies = {
- 	"nvim-lua/plenary.nvim" 
+  "nvim-lua/plenary.nvim"
   },
-  config = function()
-    require("telescope").setup({
-      --configs
-      --
-
-      extensions = {
-        
-        noice = {}
-      }
-    })
-  end
+  opts = {
+    extensions = {
+      noice = {},
+      fzf={},
+      ['ui-select'] = {
+        require('telescope.themes').get_dropdown(),
+      },
+    },
+  }
 }
