@@ -1,78 +1,46 @@
-@import url('./colors-waybar.css');
+
+@import url('../../.cache/wal/colors-waybar.css');
 
 * {
-    font-size: 15px;
-    font-family: "UbuntuMono Nerd Font Mono";
+    font-size:15px;
+    font-family: "CodeNewRoman Nerd Font Propo";
 }
 window#waybar{
-    all:unset;
-}
-.modules-left {
-    padding:7px;
-    margin:10px 0px 5px 30px;
     border-radius:10px;
-    background: alpha(@background,.7);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
-}
-.modules-center {
-    padding:7px;
-    margin:10px 0px 5px 0px;
-    border-radius:10px;
-    background: alpha(@background,.7);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
-}
-.modules-right {
-    padding:7px;
-    margin: 10px 30px 5px 0px;
-    border-radius:10px;
-    background: alpha(@background,.7);
+    background: alpha(@background,.6);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .6);
 }
 tooltip {
-  background:@background;
-  color: @foam;
+    background:@background;
+    color: @color7;
+}
+#clock:hover, #custom-pacman:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
+    transition: all .3s ease;
+    color:@color9;
 }
 #custom-notification {
-    font-family: "UbuntuMono Nerd Font";
-    padding: 0px 5px;
+    padding: 0px 5px 0 10;
     transition: all .3s ease;
-    color:@foreground;
-}
-#custom-monitor{
-  color: @gold;
-  font-family: "UbuntuMono Nerd Font";
-  margin: 0px 5px 0px 0px;
-  padding: 0px 5px;
+    color:@color7;
 }
 #clock{
-    font-family: "UbuntuMono Nerd Font Mono";
-    font-weight: 600;
-    padding: 0px 0px 0px 5px;
-    color:@pine;
+    padding: 0px 5px;
+    color:@color7;
     transition: all .3s ease;
-}
-#clock:hover{
-    transition: all .3s ease;
-    color:@foam;
 }
 #custom-pacman{
-    font-family: "UbuntuMono Nerd Font";
     padding: 0px 5px;
     transition: all .3s ease;
-    color:@iris;
+    color:@color7;
 
 }
-#custom-pacman:hover{
-    transition: all .3s ease;
-    color:@rose;
-}
 #workspaces {
-    padding: 0px 5px;
+    padding: 7px 5px;
 }
 #workspaces button {
     all:unset;
     padding: 0px 5px;
-    color: alpha(@gold,.4);
+    color: alpha(@color9,.4);
     transition: all .2s ease;
 }
 #workspaces button:hover {
@@ -82,7 +50,7 @@ tooltip {
     transition: all 1s ease;
 }
 #workspaces button.active {
-    color: @gold;
+    color: @color9;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
@@ -98,38 +66,72 @@ tooltip {
     transition: all 1s ease;
 }
 #workspaces button.empty.active {
-    color: @gold;
+    color: @color9;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
-#battery{
-    font-family: "UbuntuMono Nerd Font";
-    font-weight: 600;
-    padding: 0px 10px;
+#bluetooth{
+    padding: 0px 5px;
     transition: all .3s ease;
-    color:@nature;
+    color:@color7;
+
+}
+#network{
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@color7;
+
+}
+#battery{
+    padding: 0px 10px 0 5;
+    transition: all .3s ease;
+    color:@color7;
+
+
 }
 #battery.charging {
-    color: @foam;
+    color: #26A65B;
 }
 
 #battery.warning:not(.charging) {
-    color: @gold;
+    color: #ffbe61;
 }
 
 #battery.critical:not(.charging) {
-    color: @love;
+    color: #f53c3c;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-#cpu,#memory,#temperature{
-    font-family: "UbuntuMono Nerd Font";
-    padding: 0px 7px;
+#group-expand{
+    padding: 0px 5px;
     transition: all .3s ease; 
-    color:@foam;
+}
+#custom-expand{
+    padding: 0px 5px;
+    color:alpha(@foreground,.2);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .7);
+    transition: all .3s ease; 
+}
+#custom-expand:hover{
+    color:rgba(255,255,255,.2);
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, .5);
+}
+#custom-colorpicker{
+    padding: 0px 5px;
+}
+#cpu,#memory,#temperature{
+    padding: 0px 5px;
+    transition: all .3s ease; 
+    color:@color7;
+
+}
+#custom-endpoint{
+    color:transparent;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 1);
+
 }
 #tray{
     padding: 0px 5px;
