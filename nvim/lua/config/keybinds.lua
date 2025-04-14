@@ -44,7 +44,7 @@ vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Keep the copied value when pa
 
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Copy to system clipboard" })
 
-vim.keymap.set("n", "<C-n>", "<cmd>NoiceDismiss<CR>", { desc = "Dismiss Noice Message" })
+vim.keymap.set("n", "<C-n>", ":NoiceDismiss<CR>", { desc = "Dismiss Noice Message" })
 
 --#############
 --# TELESCOPE #
@@ -58,7 +58,7 @@ vim.keymap.set("n", "<leader>th", builtin.help_tags, { desc = "Telescope help ta
 vim.keymap.set("n", "<leader>tq", builtin.quickfix, { desc = "List items in the quickfix" })
 vim.keymap.set("n", "<leader>td", builtin.diagnostics, { desc = "Telescope Diagnostics" })
 vim.keymap.set("n", "<leader>tk", builtin.keymaps, { desc = "Telescope Keymaps" })
-vim.keymap.set("n", "<leader>tn", "<cmd>:Telescope noice<CR>", { desc = "Telescope Noice" })
+vim.keymap.set("n", "<leader>tn", ":Telescope noice<CR>", { desc = "Telescope Noice" })
 vim.keymap.set("n", "<leader>ts", function()
 	builtin.live_grep({ grep_open_files = true, prompt_title = "Live Grep in Open Files" })
 end, { desc = "Search in al open files" })
@@ -143,7 +143,17 @@ vim.api.nvim_create_autocmd("LspAttach", {
 --# OIL #
 --#######
 
-vim.keymap.set("n", "<leader>oo", "<cmd>:Oil<CR>", { desc = "Open Oil File Explorer" })
-vim.keymap.set("n", "<leader>of", "<cmd>:Oil --float<CR>", { desc = "Open Oil Float" })
+vim.keymap.set("n", "<leader>oo", ":Oil<CR>", { desc = "Open Oil File Explorer" })
+vim.keymap.set("n", "<leader>of", ":Oil --float<CR>", { desc = "Open Oil Float" })
 
--- Only when Lsp exists
+--##########
+--# BUFFER #
+--##########
+
+vim.keymap.set("n", "<leader>be", ":enew<CR>", { desc = "New Buffer" })
+vim.keymap.set("n", "<leader>bn", ":bn<CR>", { desc = "Next Buffer" })
+vim.keymap.set("n", "<leader>bp", ":bp<CR>", { desc = "Previous Buffer" })
+vim.keymap.set("n", "<leader>bc", ":bd<CR>", { desc = "Close Buffer" })
+vim.keymap.set("n", "<leader>bs", ":saveas", { desc = "Save Buffer As" })
+
+vim.keymap.set({ "n", "v" }, "<leader>bf", ":BufferFormat<CR>", { desc = "Format buffer" })
