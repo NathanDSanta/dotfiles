@@ -2,10 +2,9 @@
   "layer": "top",
   "position": "top",
   "reload_style_on_change": true,
-  "modules-left": ["clock","cpu","memory","temperature","custom/pacman"],
-  "modules-center": ["hyprland/workspaces","custom/monitor", "hyprland/workspaces#alt"],
-  "modules-right": ["tray","custom/notification","battery"],
-
+  "modules-left": ["clock","hyprland/language", "custom/pacman","group/hardware"],
+  "modules-center": ["hyprland/workspaces","custom/monitor#left","custom/submap","custom/monitor#right", "hyprland/workspaces#alt"],
+  "modules-right": ["pulseaudio","tray","custom/notification","battery"],
 
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -33,25 +32,56 @@
     "ignore-workspaces": ["1","2","3","4"],
     "all-outputs": false
   },
+  "custom/submap": {
+    "exec": "~/.scripts/getSubmap",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "focus": "",
+      "window": "",
+      "resize": "󰩨",
+      "launch": "",
+      "script": "",
+      "monitor": "󰍹",
+    },
+  },
+  "hyprland/language": {
+    "format": "󰌌 {}",
+    "format-en": "US",
+    "format-en-colemak": "CLK",
+    "format-es": "ES",
+    "format-ro": "RO",
+  },
   "custom/notification": {
     "tooltip": false,
     "format": "󰂚",
     "on-click": "swaync-client -t -sw",
     "escape": true
   },
-  "custom/monitor": {
+  "custom/monitor#left": {
     "tooltip": false,
     "exec": "~/.scripts/getFocusedMonitor",
     "format": "{icon}",
     "return-type": "json",
     "format-icons": {
-      "laptop": "",
-      "right": "" ,
-      "left": "" ,
+      "laptop": "",
+      "right": "" ,
+      "left": "" ,
+    }
+  },
+  "custom/monitor#right": {
+    "tooltip": false,
+    "exec": "~/.scripts/getFocusedMonitor",
+    "format": "{icon}",
+    "return-type": "json",
+    "format-icons": {
+      "laptop": "",
+      "right": "" ,
+      "left": "" ,
     }
   },
   "clock": {
-    "format": "{:%H:%M} ",
+    "format": "󰥔 {:%H:%M} ",
     "interval": 1,   
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
@@ -63,6 +93,16 @@
       "on-click-right": "shift_down",
       "on-click": "shift_up"
     }
+  },
+  "pulseaudio":{
+    "format": "{icon} {volume}%",
+    "format-icons": {
+      "default": ["",""],
+      "default-muted": "",
+      "headphone": "",
+      "headset": "",
+    },
+    "on-click": "pavucontrol"
   },
   "battery": {
     "interval":30,
@@ -85,7 +125,7 @@
     ],
   },
   "custom/pacman": {
-    "format": "󰅢  {}",
+    "format": "{} 󰚰 ",
     "interval": 30,   
     "exec": "checkupdates | wc -l",
     "exec-if": "exit 0",
@@ -94,15 +134,36 @@
     "tooltip": false,
   },
   "cpu": {
-    "format": "󰻠",
-    "tooltip": true
+    "format": "󰍛 {usage}%",
+    "tooltip": true,
   },
   "memory": {
-    "format": ""
+    "format": " {percentage}%",
   },
   "temperature": {
     "critical-threshold": 80,
-    "format": "",
+    "format": " {temperatureC}ºC",
+  },
+  "disk":{
+    "format": " {percentage_used}%({total})",
+    "tooltip": true,
+  },
+  "group/hardware":{
+    "orientation": "horizontal",
+    "drawer" : {
+
+    },
+    "modules": [
+      "custom/icon",
+      "cpu",
+      "memory",
+      "temperature",
+      "disk"
+    ]
+  },
+  "custom/icon":{
+    "format": "",
+    "tooltip": false
   },
   "tray": {
     "icon-size": 14,

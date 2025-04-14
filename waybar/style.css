@@ -36,19 +36,30 @@ tooltip {
     font-family: "UbuntuMono Nerd Font";
     padding: 0px 5px;
     transition: all .3s ease;
-    color:@foreground;
+    color:@rose;
 }
-#custom-monitor{
-  color: @gold;
+#custom-monitor.left{
+  color: @iris;
   font-family: "UbuntuMono Nerd Font";
-  margin: 0px 5px 0px 0px;
-  padding: 0px 5px;
+  padding: 0px 4px 0px 4px;
+}
+#custom-monitor.right{
+  color: @iris;
+  font-family: "UbuntuMono Nerd Font";
+  padding: 0px 7px 0px 4px;
+}
+#custom-submap {
+  font-family: "UbuntuMono Nerd Font";
+  font-size: 18px;
+  padding: 0px 12px 0px 10px;
+  font-weight: 600;
+  color: @iris;
 }
 #clock{
-    font-family: "UbuntuMono Nerd Font Mono";
+    font-family: "UbuntuMono Nerd Font";
     font-weight: 600;
     padding: 0px 0px 0px 5px;
-    color:@pine;
+    color:@nature;
     transition: all .3s ease;
 }
 #clock:hover{
@@ -59,7 +70,7 @@ tooltip {
     font-family: "UbuntuMono Nerd Font";
     padding: 0px 5px;
     transition: all .3s ease;
-    color:@iris;
+    color: alpha(@foreground, .6);
 
 }
 #custom-pacman:hover{
@@ -72,7 +83,7 @@ tooltip {
 #workspaces button {
     all:unset;
     padding: 0px 5px;
-    color: alpha(@gold,.4);
+    color: alpha(@iris,.4);
     transition: all .2s ease;
 }
 #workspaces button:hover {
@@ -82,7 +93,7 @@ tooltip {
     transition: all 1s ease;
 }
 #workspaces button.active {
-    color: @gold;
+    color: @iris;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
@@ -98,9 +109,37 @@ tooltip {
     transition: all 1s ease;
 }
 #workspaces button.empty.active {
-    color: @gold;
+    color: @iris;
     border: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+}
+#language {
+  font-family: "UbuntuMono Nerd Font";
+  font-weight: 600;
+  padding: 0px 5px;
+  color: @rose;
+}
+#pulseaudio {
+  padding: 0px 10px;
+  font-family: "UbuntuMono Nerd Font";
+  font-weight: 600;
+  color: @pine;
+}
+#pulseaudio-slider slider{
+  min-width: 12px;
+  min-height: 12px;
+  border: solid alpha(@background, .8) .5px;
+  background-color: @pine;
+}
+#pulseaudio-slider trough{
+  min-width: 80px;
+  min-height: 5px;
+  background-color: alpha(@pine, .6);
+}
+#pulseaudio-slider highlight{
+  min-width: 10px;
+  min-height: 5px;
+  background-color: @pine;
 }
 #battery{
     font-family: "UbuntuMono Nerd Font";
@@ -125,13 +164,19 @@ tooltip {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-#cpu,#memory,#temperature{
+#custom-icon {
+  font-family: "UbuntuMono Nerd Font";
+  padding: 0px 10px 0px 0px;
+  color: @pine;
+}
+#cpu,#memory,#temperature, #disk{
     font-family: "UbuntuMono Nerd Font";
-    padding: 0px 7px;
+    padding: 0px 5px;
     transition: all .3s ease; 
-    color:@foam;
+    color:alpha(@foam, .8);
 }
 #tray{
+    opacity: .6;
     padding: 0px 5px;
     transition: all .3s ease; 
 
