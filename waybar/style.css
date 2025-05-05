@@ -41,7 +41,7 @@ tooltip {
 #custom-monitor.left{
   color: @iris;
   font-family: "UbuntuMono Nerd Font";
-  padding: 0px 4px 0px 4px;
+  padding: 0px 7px 0px 4px;
 }
 #custom-monitor.right{
   color: @iris;
@@ -176,6 +176,7 @@ tooltip {
     color:alpha(@foam, .8);
 }
 #tray{
+    font-family: "UbuntuMono Nerd Font";
     opacity: .6;
     padding: 0px 5px;
     transition: all .3s ease; 

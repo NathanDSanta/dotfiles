@@ -44,7 +44,7 @@ vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Keep the copied value when pa
 
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Copy to system clipboard" })
 
-vim.keymap.set("n", "<C-n>", ":NoiceDismiss<CR>", { desc = "Dismiss Noice Message" })
+vim.keymap.set("n", "<C-k>", ":NoiceDismiss<CR>", { desc = "Dismiss Noice Message" })
 
 --#############
 --# TELESCOPE #
