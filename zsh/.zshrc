@@ -12,20 +12,16 @@ plugins=(
   fzf-tab
 )
 
-# local theme='rose-pine'
 export ZSH_DIR=~/.config/zsh/
 
 # SOURCES
 source $ZSH_DIR/exports.zsh
-source $ZSH_DIR/rose-pine.zsh
-source $ZSH_DIR/rose-pine-man.zsh
 source $ZSH_DIR/completions.zsh
 source $ZSH/oh-my-zsh.sh
 source <(fzf --zsh)
 source $ZSH_DIR/options.zsh
 source $ZSH_DIR/aliases.zsh
-
-colorize_man "rose-pine-moon" true
+source $ZSH_DIR/zsh-syntax-hightlighting-theme.zsh
 
 
 # zstyle ':omz:update' mode disabled  # disable automatic updates

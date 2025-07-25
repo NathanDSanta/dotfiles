@@ -1,6 +1,10 @@
 export ZSH=~/.oh-my-zsh/
 export ARTISTIC_STYLE_OPTIONS=~/.config/astyle/.astylerc
-export BAT_THEME=Dracula
+export BAT_THEME="Catppuccin Mocha"
+
+# Set Bat as man colorizing pager
+export MANPAGER="sh -c 'sed -u -e \"s/\\x1B\[[0-9;]*m//g; s/.\\x08//g\" | bat -p -lman'"
+man 2 select
 
 export FZF_DEFAULT_OPTS="
 --color=fg:#908caa,bg:#232136,hl:#ea9a97

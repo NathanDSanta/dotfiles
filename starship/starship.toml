@@ -94,7 +94,7 @@ style = "fg:green "
 format = '[ $symbol $branch(:$remote_branch) ]($style)'
 
 [git_status]
-style = "fg:peach "
+style = "fg:teal "
 ahead = " 󰶣 ${count} "
 behind = " 󰶡 ${count} "
 diverged = " 󰶣 ${ahead_count} 󰶡 ${behind_count} "
@@ -263,5 +263,5 @@ format = '[](fg:#333a56 $style)[  $time ](fg:#94e2d5 $style)'
 # Last param in the first line/row
 # fg:#3b4363 if time enabled
 [character]
-success_symbol = "[](fg:teal)"
+success_symbol = "[](fg:peach)"
 error_symbol = "[](fg:red)"
