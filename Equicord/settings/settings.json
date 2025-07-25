@@ -658,9 +658,6 @@
         "Equissant": {
             "enabled": false
         },
-        "ExpandedUserTags": {
-            "enabled": false
-        },
         "ExportContacts": {
             "enabled": false
         },
@@ -1092,6 +1089,29 @@
         },
         "BadgeAPI": {
             "enabled": true
+        },
+        "MoreUserTags": {
+            "enabled": false
+        },
+        "QuestFocused": {
+            "enabled": false
+        },
+        "NoTrack": {
+            "enabled": true,
+            "disableAnalytics": true
+        },
+        "VCSupport": {
+            "enabled": true
+        },
+        "Settings": {
+            "enabled": true,
+            "settingsLocation": "aboveNitro"
+        },
+        "EquicordHelper": {
+            "enabled": true
+        },
+        "SupportHelper": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -1104,7 +1124,7 @@
         "authenticated": false,
         "url": "https://cloud.equicord.org/",
         "settingsSync": false,
-        "settingsSyncVersion": 1752934014420
+        "settingsSyncVersion": 1753465697981
     },
     "ignoreResetWarning": false,
     "userCssVars": {}
