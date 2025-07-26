@@ -29,4 +29,5 @@ export PATH=~/.scripts:"$PATH"
 export PATH=~/.console-ninja/.bin:"$PATH"
 
 export KITTY_ENABLE_WAYLAND=1
-
+export XCURSOR_SIZE=24
+export XCURSOR_THEME="catppuccin-mocha-dark"
