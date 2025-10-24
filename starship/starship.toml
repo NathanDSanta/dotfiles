@@ -1,0 +1,267 @@
+format = """\
+$username\
+[ ](fg:flamingo)\
+$hostname\
+$directory\
+[ ](fg:flamingo)\
+$git_branch\
+$git_status\
+$all\
+$character"""
+# Disable the blank line at the start of the prompt
+add_newline = true
+
+palette = "catppuccin_mocha"
+
+[palettes.rose-pine-moon]
+grey = '#393552'
+red = '#eb6f92'
+pink = '#ea9a97'
+orange = '#f6c177'
+blue = '#3e8fb0'
+cyan = '#9ccfd8'
+purple = '#c4a7e7'
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
+
+[line_break]
+disabled = true
+
+# You can also replace your username with a neat symbol like  to save some space
+[username]
+show_always = true
+style_user = "fg:mauve "
+style_root = "fg:mauve "
+format = '[   󰦈 ]($style)' # $user
+
+[hostname]
+ssh_only = true
+ssh_symbol = '󰖟 '
+style = "fg:blue "
+format = ' [$ssh_symbol$hostname]($style)'
+
+[directory]
+style = "fg:sapphire "
+format = " [$path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"~" = " "
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰽰"
+"Pictures" = " "
+"videos" = " "
+"important" = "󰜦 "
+"uni" = "󰑴 "
+# Keep in mind that the order matters. For example:
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important  " = "  "
+
+[git_branch]
+symbol = " "
+style = "fg:green "
+format = '[ $symbol $branch(:$remote_branch) ]($style)'
+
+[git_status]
+style = "fg:teal "
+ahead = " 󰶣 ${count} "
+behind = " 󰶡 ${count} "
+diverged = " 󰶣 ${ahead_count} 󰶡 ${behind_count} "
+up_to_date = "  "
+untracked = "  "
+stashed = "  "
+modified = " 󰷈 "
+staged = "  "
+renamed = "  "
+deleted = " 󰆴 "
+format = '[$all_status$ahead_behind ]($style)'
+
+
+[aws]
+symbol = " "
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[conda]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[dart]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[c]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+detect_extensions = ["c", "cpp", "h"] 
+
+[docker_context]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol $context]($style) $path '
+
+[elixir]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[elm]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[golang]
+symbol = "ﳑ"
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[haskell]
+symbol = "λ"
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[java]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[julia]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[lua]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[nim]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[nix_shell]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[nodejs]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[perl]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[php]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[python]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[ruby]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[rust]
+symbol = ""
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[swift]
+symbol = "ﯣ"
+style = "fg:yellow "
+format = '[ $symbol ($version )]($style)'
+
+[package]
+symbol = ""
+style = "fg:yellow "
+format = "[ $symbol $version]($style)"
+disabled = true
+
+
+[cmd_duration]
+min_time = 1
+style = "fg:#f9e2af "
+format = "[ $duration]($style)"
+disabled = true
+
+[jobs]
+symbol = "華"
+style = "fg:#f9e2af "
+format = "[ $symbol]($style)"
+
+[battery]
+full_symbol = " "
+charging_symbol = " "
+discharging_symbol = " "
+unknown_symbol = " "
+empty_symbol = " "
+format = "[ $symbol$percentage ]($style )"
+disabled = true
+
+[[battery.display]]
+threshold = 15
+style = "bold fg:#CAA9E0"
+
+[[battery.display]]
+threshold = 50
+style = "fg:#f9e2af"
+
+[[battery.display]]
+threshold = 101
+style = "bold #a6e3a1"
+
+# Prompt: optional param 1
+[time]
+disabled = true
+time_format = "%R"
+style = ""
+format = '[](fg:#333a56 $style)[  $time ](fg:#94e2d5 $style)'
+
+# Last param in the first line/row
+# fg:#3b4363 if time enabled
+[character]
+success_symbol = "[](fg:peach)"
+error_symbol = "[](fg:red)"
