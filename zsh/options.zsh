@@ -23,3 +23,4 @@ setopt autocd                   # if only directory path is entered, cd there.
 #Keybindings
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+bindkey '^H' backward-kill-word

@@ -19,6 +19,7 @@ export ANDROID_HOME=/opt/android-sdk/
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export JAVA_HOME=/usr/lib/jvm/default/
 export RUST_BACKTRACE=1
+export GEM_HOME=$HOME/.gem
 
 export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH=$PATH:$ANDROID_HOME/platform-tools
@@ -26,6 +27,7 @@ export PATH=~/.pyenv/bin:"$PATH"
 export PATH=~/.pyenv/shims:"$PATH"
 export PATH=~/.scripts:"$PATH"
 export PATH=~/.console-ninja/.bin:"$PATH"
+export PATH=/home/NathanDSanta/.gem/ruby/3.4.0/bin:"$PATH"
 
 export KITTY_ENABLE_WAYLAND=1
 export XCURSOR_SIZE=24
