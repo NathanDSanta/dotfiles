@@ -42,3 +42,7 @@ alias ytmp3='yt-dlp --audio-format mp3 --audio-quality 256K'
 alias clear='clear && fastfetch'
 alias cmatrix='cmatrix -C magenta'
 # alias fastfetch='kitten icat --align=left --place 40x40@0x0 ~/.config/fastfetch/assets/arch.png | fastfetch --raw - --logo-width 40 --logo-height 40'
+
+# Grub
+alias grubinstall='sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch'
+alias grubmkconfig='sudo grub-mkconfig -o /boot/grub/grub.cfg'

@@ -48,6 +48,5 @@ add-zsh-hook -Uz precmd rehash_precmd
 eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-eval "$(ssh-agent -s)"
 
 fastfetch
