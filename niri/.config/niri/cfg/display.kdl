@@ -3,8 +3,8 @@
 // You will have to remove "/-" and edit it before it takes effect.
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 
-output "HDMI-A-5" {
-    mode "1920x1080@120.000"
+output "DP-4" {
+    mode "1920x1080@180.003"
     position x=0 y=0
     scale 1
 }

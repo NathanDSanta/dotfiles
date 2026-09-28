@@ -6,6 +6,12 @@
     "auto": false,
     "notice": false
   },
+  "palette": {
+    "path": "blue",
+    "time": "red",
+    "git":"green",
+    "prompt":"yellow"
+  },
   "blocks": [
     {
       "type": "rprompt",
@@ -15,7 +21,7 @@
             "time_format": "15:04:05"
           },
           "template": " {{ .CurrentDate | date .Format }} ",
-          "foreground": "#00C5C7",
+          "foreground": "p:time",
           "type": "time",
           "style": "plain"
         }
@@ -30,19 +36,19 @@
             "style": "full"
           },
           "template": "{{ .Path }} ",
-          "foreground": "#77E4F7",
+          "foreground": "p:path",
           "type": "path",
           "style": "plain"
         },
         {
           "template": "{{ .HEAD }} ",
-          "foreground": "#FFE700",
+          "foreground": "p:git",
           "type": "git",
           "style": "plain"
         },
         {
           "template": "❯ ",
-          "foreground": "#43D426",
+          "foreground": "p:prompt",
           "type": "text",
           "style": "plain"
         }

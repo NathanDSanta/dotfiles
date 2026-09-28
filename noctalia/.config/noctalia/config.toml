@@ -1,2 +1,5 @@
 [shell]
 polkit_agent = true
+
+[hooks]
+wallpaper_changed = "~/.config/scripts/wallpaper.sh"

@@ -1,0 +1,2 @@
+config-file = ~/.cache/wal/colors-ghostty
+app-notifications = no-config-reload
