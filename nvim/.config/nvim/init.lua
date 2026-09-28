@@ -1,4 +1,5 @@
 require("config.lazy")
 require("config.autocmd")
+require("config.commands")
 require("config.settings")
 require("config.keybinds")

@@ -1,27 +1,50 @@
-local o = vim.opt
+local opt = vim.opt
 local g = vim.g
-o.termguicolors = true
+
 g.mapleader = ' '
-g.mapleader = ' '
-o.number = true
-o.relativenumber = true
-o.undofile = true
-o.ignorecase = true
-o.smartcase = true
-o.splitright = true
-o.splitbelow = true
-o.expandtab = true
-o.shiftwidth = 2
-o.tabstop = 2
-o.softtabstop = 2
-o.wrap = false
-o.smartindent = true
-o.autoindent = true
-o.breakindent = true
-o.signcolumn = "yes"
-o.scrolloff = 8
-o.incsearch = true
+gpt.mapleader = ' '
+
 vim.diagnostic.config({
   virtual_text = true,
   underline = true
 })
+
+-- Line numbers
+opt.nu = true
+opt.relativenumber = true
+
+-- Indentation
+opt.tabstop = 2
+opt.softtabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.expandtab = true
+opt.smarttab = true
+opt.smartindent = true
+opt.autoindent = true
+opt.breakindent = true
+
+-- Text wrap - Term colors
+opt.wrap = false
+opt.termguicolors = true
+
+-- File
+opt.swapfile = false
+opt.backup = false
+opt.undodir = os.getenv("HOME") .. "/.cache/nvim/undodir"
+opt.undofile = true
+
+-- Search
+opt.hlsearch = false
+opt.incsearch = true
+opt.ignorecase = true
+opt.smartcase = true
+opt.inccommand = "split"
+
+-- Scroll
+opt.scrolloff = 9
+opt.signcolumn = "yes"
+
+-- Splits
+opt.splitright = true
+opt.splitbelow = true

@@ -24,7 +24,7 @@ return{
       require("mason").setup()
 
       require("mason-lspconfig").setup({
-        ensure_installed = {"lua_ls", "eslint", "ts_ls"}
+        ensure_installed = {"lua_ls", "eslint", "ts_ls", "stylua"}
       })
 
 
@@ -36,7 +36,10 @@ return{
     end  },
   {
   'saghen/blink.cmp',
-  dependencies = { 'rafamadriz/friendly-snippets' },
+  dependencies = { 
+    'rafamadriz/friendly-snippets',
+    'folke/lazydev.nvim'
+  },
 
   version = '1.*',
   opts = {
@@ -49,15 +52,27 @@ return{
       nerd_font_variant = 'mono'
     },
 
+    snippets = { preset = "luasnip"},
+
     completion = { documentation = { auto_show = true} },
     sources = {
       default = { 'lsp', 'path', 'snippets', 'buffer' },
+      providers = {
+        lazydev = {module = "lazydev.integrations.blink", score_offset = 100}
+      },
     },
-
+    signature = { enabled = true},
     fuzzy = { implementation = "prefer_rust_with_warning" }
+ 		cmdline = { completion = { menu = { auto_show = true } } },
+
   },
   opts_extend = { "sources.default" }
   },
---  {},
+  {
+    'stevearc/conform.nvim',
+    opts = {
+
+    },
+  },
 --  {},
 }
