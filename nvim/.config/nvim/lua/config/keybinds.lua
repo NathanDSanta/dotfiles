@@ -4,10 +4,10 @@ vim.keymap.set("v", "<M-Down>", ":m '>+1<CR>gv=gv", { desc = "Move current line 
 vim.keymap.set("v", "<M-K>", ":m '<-2<CR>gv=gv", { desc = "Move current line up" })
 vim.keymap.set("v", "<M-J>", ":m '>+1<CR>gv=gv", { desc = "Move current line down" })
 
-vim.keymap.set('n', '<C-Left>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-vim.keymap.set('n', '<C-Right>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-vim.keymap.set('n', '<C-Down>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', '<C-Up>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+vim.keymap.set("n", "<C-Left>", "<C-w><C-h>", { desc = "Move focus to the left window" })
+vim.keymap.set("n", "<C-Right>", "<C-w><C-l>", { desc = "Move focus to the right window" })
+vim.keymap.set("n", "<C-Down>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
+vim.keymap.set("n", "<C-Up>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 -- Keeping the cursor centered
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Keep cursor centered when moving up" })
@@ -17,20 +17,20 @@ vim.keymap.set("n", "n", "nzzzv", { desc = "Keep cursor centered when going to t
 vim.keymap.set("n", "N", "Nzzzv", { desc = "Keep cursor centered when going to the prev searched value" })
 
 -- Save and quit current file quicker
-vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { silent = false, desc = 'Save file' })
-vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { silent = false, desc = 'Quit file' })
+vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { silent = false, desc = "Save file" })
+vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { silent = false, desc = "Quit file" })
 
 -- Yank to system clipboard
-vim.keymap.set("n", "<leader>y", '"+y', { desc = 'Copy to system clipboard' })
-vim.keymap.set("v", "<leader>y", '"+y', { desc = 'Copy selection to system clipboard' })
-vim.keymap.set("n", "<leader>Y", '"+Y', { desc = 'Copy line to system clipboard' })
+vim.keymap.set("n", "<leader>y", '"+y', { desc = "Copy to system clipboard" })
+vim.keymap.set("v", "<leader>y", '"+y', { desc = "Copy selection to system clipboard" })
+vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Copy line to system clipboard" })
 
 -- Paste without replacing paste with what you are highlighted over
-vim.keymap.set("n", "<leader>p", '"_dP', )
+vim.keymap.set("n", "<leader>p", '"_dP', { desc = "Keep the copied value when pasting over another word" })
 
 -- Buffer
-vim.keymap.set("n", "<leader>v", ":vsplit<CR>", { desc = 'Vertical split' })
-vim.keymap.set("n", "<leader>h", ":hsplit<CR>", { desc = 'Horizontal split' })
+vim.keymap.set("n", "<leader>v", ":vsplit<CR>", { desc = "Vertical split" })
+vim.keymap.set("n", "<leader>h", ":hsplit<CR>", { desc = "Horizontal split" })
 vim.keymap.set("n", "<leader>be", ":enew<CR>", { desc = "New Buffer" })
 vim.keymap.set("n", "<leader>bn", ":bn<CR>", { desc = "Next Buffer" })
 vim.keymap.set("n", "<leader>bp", ":bp<CR>", { desc = "Previous Buffer" })
@@ -39,14 +39,12 @@ vim.keymap.set("n", "<leader>bs", ":saveas", { desc = "Save Buffer As" })
 
 vim.keymap.set({ "n", "v" }, "<leader>bf", ":BufferFormat<CR>", { desc = "Format buffer" })
 
-
 -- Oil File Explorer
 vim.keymap.set("n", "<leader>oo", ":Oil<CR>", { desc = "Open Oil File Explorer" })
 vim.keymap.set("n", "<leader>of", ":Oil --float<CR>", { desc = "Open Oil Float" })
 
 -- Noice Notifications Message
 vim.keymap.set("n", "<C-k>", ":NoiceDismiss<CR>", { desc = "Dismiss Noice Message" })
-
 
 vim.api.nvim_create_autocmd(
 	"LspAttach",

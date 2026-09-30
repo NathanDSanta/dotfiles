@@ -1,12 +1,12 @@
 local opt = vim.opt
 local g = vim.g
 
-g.mapleader = ' '
-gpt.mapleader = ' '
+g.mapleader = " "
+g.mapleader = " "
 
 vim.diagnostic.config({
-  virtual_text = true,
-  underline = true
+	virtual_text = true,
+	underline = true,
 })
 
 -- Line numbers

@@ -1,0 +1,39 @@
+# Pywal theme for Ghostty
+
+background = {background}
+foreground = {foreground}
+cursor-color = {cursor}
+selection-background = {color4}
+selection-foreground = {background}
+
+# Black
+palette = 0={color0}
+palette = 8={color8}
+
+# Red
+palette = 1={color1}
+palette = 9={color9}
+
+# Green
+palette = 2={color2}
+palette = 10={color10}
+
+# Yellow
+palette = 3={color3}
+palette = 11={color11}
+
+# Blue
+palette = 4={color4}
+palette = 12={color12}
+
+# Magenta
+palette = 5={color5}
+palette = 13={color13}
+
+# Cyan
+palette = 6={color6}
+palette = 14={color14}
+
+# White
+palette = 7={color7}
+palette = 15={color15}
