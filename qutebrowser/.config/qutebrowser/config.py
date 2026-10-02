@@ -847,7 +847,9 @@ c.aliases = {"w": "session-save", "q": "close", "qa": "quit", "wq": "quit --save
 ## increased compatibility.  Note that the value read from JavaScript is
 ## always the global value.
 ## Type: FormatString
-# c.content.headers.user_agent = 'Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko) {upstream_browser_key}/{upstream_browser_version_short} Safari/{webkit_version}'
+c.content.headers.user_agent = (
+    "Mozilla/5.0 (X11; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0"
+)
 
 ## Enable hyperlink auditing (`<a ping>`).
 ## Type: Bool
@@ -1199,7 +1201,7 @@ c.aliases = {"w": "session-save", "q": "close", "qa": "quit", "wq": "quit --save
 ## `{line0}`: Same as `{line}`, but starting from index 0. * `{column0}`:
 ## Same as `{column}`, but starting from index 0.
 ## Type: ShellCommand
-# c.editor.command = ['gvim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
+c.editor.command = ["nvim", "{file}"]
 
 ## Encoding to use for the editor.
 ## Type: Encoding

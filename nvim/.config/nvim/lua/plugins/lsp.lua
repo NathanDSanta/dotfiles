@@ -18,13 +18,21 @@ return {
 				},
 				ts_ls = {},
 				eslint = {},
+				rust_analyzer = {
+					check = {
+						command = "clippy",
+					},
+					diagnostics = {
+						enable = true,
+					},
+				},
 			},
 		},
 		config = function(_, opts)
 			require("mason").setup()
 
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "eslint", "ts_ls", "stylua" },
+				ensure_installed = { "lua_ls", "eslint", "ts_ls", "stylua", "rust_analyzer" },
 			})
 
 			for server, config in pairs(opts.servers) do
@@ -73,9 +81,4 @@ return {
 		},
 		opts_extend = { "sources.default" },
 	},
-	{
-		"stevearc/conform.nvim",
-		opts = {},
-	},
-	--  {},
 }
