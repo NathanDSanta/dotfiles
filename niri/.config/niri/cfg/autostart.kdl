@@ -4,3 +4,7 @@
     spawn-at-startup "noctalia"
     spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP=niri"
 
+    environment {
+      XDG_SESSION_TYPE "wayland"
+      MOZ_ENABLE_WAYLAND "1"
+    }

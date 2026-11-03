@@ -8,6 +8,8 @@ return {
 				lua = { "stylua" },
 				python = { "black" },
 				javascript = { "prettier" },
+				typescript = { "prettier" },
+				css = { "prettier" },
 			},
 			format_on_save = {
 				timeout_ms = 500,

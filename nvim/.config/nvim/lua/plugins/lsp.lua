@@ -18,6 +18,8 @@ return {
 				},
 				ts_ls = {},
 				eslint = {},
+				cssls = {},
+				html = {},
 				rust_analyzer = {
 					check = {
 						command = "clippy",
@@ -32,7 +34,7 @@ return {
 			require("mason").setup()
 
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "eslint", "ts_ls", "stylua", "rust_analyzer" },
+				ensure_installed = { "lua_ls", "eslint", "ts_ls", "stylua", "rust_analyzer", "cssls", "html" },
 			})
 
 			for server, config in pairs(opts.servers) do
@@ -52,6 +54,10 @@ return {
 				version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
 				-- install jsregexp (optional!).
 				build = "make install_jsregexp",
+				config = function()
+					require("luasnip").setup()
+					require("luasnip.loaders.from_vscode").lazy_load()
+				end,
 			},
 		},
 
