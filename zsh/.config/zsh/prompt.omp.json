@@ -1,59 +1,110 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 4,
   "upgrade": {
     "source": "cdn",
     "interval": "168h",
     "auto": false,
     "notice": false
   },
-  "palette": {
-    "path": "blue",
-    "time": "red",
-    "git":"green",
-    "prompt":"yellow"
-  },
   "blocks": [
     {
-      "type": "rprompt",
+      "type": "prompt",
+      "alignment": "left",
       "segments": [
         {
+          "type": "session",
+          "style": "plain",
+          "foreground": "magenta",
+          "template": "{{ if eq .HostName \"Nathan-PC\" }}󰍹{{ else if eq .HostName \"Nathan-PC2\" }}󰌢 {{ else }}󰟀 {{ end }} "
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "blue",
+          "template": "{{ .Path }} ",
           "options": {
-            "time_format": "15:04:05"
-          },
-          "template": " {{ .CurrentDate | date .Format }} ",
-          "foreground": "p:time",
-          "type": "time",
-          "style": "plain"
+            "style": "agnoster_short",
+            "max_depth": 3,
+            "folder_icon": "…",
+            "folder_separator_icon": "/",
+            "home_icon": "~",
+            "mapped_locations": {
+              "~/Documents": "󰈙",
+              "~/Downloads": "󰇚",
+              "~/Pictures": "󰉏",
+              "~/Videos": "󰕧",
+              "~/Projects": "󰲋",
+              "~/uni": "󰑴",
+              "~/.config": "󰒓"
+            }
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "green",
+          "template": "{{ .HEAD }}{{ if gt .Working.Modified 0 }} 󰏫{{ .Working.Modified }}{{ end }}{{ if gt .Working.Untracked 0 }} 󰋗{{ .Working.Untracked }}{{ end }}{{ if gt .Working.Deleted 0 }} 󰆴{{ .Working.Deleted }}{{ end }}{{ if gt .Working.Added 0 }} 󰐗{{ .Working.Added }}{{ end }}{{ if gt .Staging.Modified 0 }} 󰄬{{ .Staging.Modified }}{{ end }}{{ if gt .Staging.Added 0 }} 󰐗{{ .Staging.Added }}{{ end }}{{ if gt .Staging.Deleted 0 }} 󰆴{{ .Staging.Deleted }}{{ end }}{{ if gt .Ahead 0 }} 󰁝{{ .Ahead }}{{ end }}{{ if gt .Behind 0 }} 󰁅{{ .Behind }}{{ end }}",
+          "options": {
+            "branch_icon": " ",
+            "fetch_status": true
+          }
         }
       ]
     },
     {
       "type": "prompt",
       "alignment": "left",
+      "newline": true,
       "segments": [
         {
+          "type": "python",
+          "style": "plain",
+          "foreground": "yellow",
+          "template": " {{ .Full }} ",
           "options": {
-            "style": "full"
-          },
-          "template": "{{ .Path }} ",
-          "foreground": "p:path",
-          "type": "path",
-          "style": "plain"
+            "display_mode": "context"
+          }
         },
         {
-          "template": "{{ .HEAD }} ",
-          "foreground": "p:git",
-          "type": "git",
-          "style": "plain"
+          "type": "rust",
+          "style": "plain",
+          "foreground": "yellow",
+          "template": " {{ .Full }} ",
+          "options": {
+            "display_mode": "context"
+          }
         },
         {
-          "template": "❯ ",
-          "foreground": "p:prompt",
+          "type": "node",
+          "style": "plain",
+          "foreground": "yellow",
+          "template": " {{ .Full }} ",
+          "options": {
+            "display_mode": "context"
+          }
+        },
+        {
+          "type": "go",
+          "style": "plain",
+          "foreground": "yellow",
+          "template": " {{ .Full }} ",
+          "options": {
+            "display_mode": "context"
+          }
+        },
+        {
           "type": "text",
-          "style": "plain"
+          "style": "plain",
+          "foreground": "default",
+          "template": "❯ "
         }
       ]
     }
   ],
-  "version": 4
+  "transient_prompt": {
+    "foreground": "default",
+    "background": "transparent",
+    "template": "❯ "
+  }
 }
