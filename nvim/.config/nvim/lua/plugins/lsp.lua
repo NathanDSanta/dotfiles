@@ -20,6 +20,7 @@ return {
 				eslint = {},
 				cssls = {},
 				html = {},
+				r_language_server = {},
 				rust_analyzer = {
 					check = {
 						command = "clippy",
@@ -34,7 +35,15 @@ return {
 			require("mason").setup()
 
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "eslint", "ts_ls", "stylua", "rust_analyzer", "cssls", "html" },
+				ensure_installed = {
+					"lua_ls",
+					"eslint",
+					"ts_ls",
+					"stylua",
+					"rust_analyzer",
+					"cssls",
+					"html",
+				},
 			})
 
 			for server, config in pairs(opts.servers) do

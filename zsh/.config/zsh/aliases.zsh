@@ -19,4 +19,3 @@ curl() {
         command curl "$@"
     fi
 }
-

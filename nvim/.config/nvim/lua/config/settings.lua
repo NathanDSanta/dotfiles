@@ -3,6 +3,7 @@ local g = vim.g
 
 g.mapleader = " "
 g.mapleader = " "
+g.R_app = "radian"
 
 vim.diagnostic.config({
 	virtual_text = true,
